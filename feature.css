@@ -1,0 +1,29 @@
+
+
+/*first page*/
+
+.feature_page{
+	background-image: url(images/features/bg1_1.jpg);
+	height: 592px;
+}
+
+.hedr{
+	margin-top: 10em;
+}
+
+span.atndnc{
+	font-size: 36px;
+}
+.frst_pg{
+position: relative;
+    left: 5.8em;
+    top: -1.5em;
+    color: white;
+}
+
+.frst_para{
+font-size: 22px;
+position: relative;
+    left: 5.8em;
+    top: -2.3em;
+}

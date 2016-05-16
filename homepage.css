@@ -1,0 +1,604 @@
+
+
+
+
+
+body{
+	margin: 0;
+	overflow-x:hidden;
+}
+
+.home_page{
+  background-image: url(images/children.jpg);
+	
+	padding: 0;
+	 -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.block1{
+   float: right;
+    margin-right: 9.9%;
+    margin-bottom: 13%;
+    margin-top: 10%;
+
+}
+
+p.manage{
+	font-size: 30px;
+	color: white;
+	font-style:lato;
+}
+
+/*.hdr
+{
+	margin-bottom: 200px;
+}*/
+
+.threea_box{
+	border:1px solid red;
+	border-color: transparent;
+	background-color: #22a9e2;
+
+	/*box-shadow:0px 0px 5px 3px #907D7D;*/
+
+}
+
+.three1_box{
+	z-index: 1;
+}
+
+.three_box{
+	margin: 0px -1.3em;
+	font-family: lato;
+
+}
+
+p.three_box_para{
+	font-size: 14px;
+	color: #037594;
+	position: relative;
+	    left: .5em;
+    /*top: 1em;*/
+margin-top: 1.1em;
+ /*font-family: lato;*/
+}
+
+span.para_m{
+	color: white;
+}
+
+img.img_box{
+	height: 14.8em;
+    float: right;
+    top: -9em;
+    position: absolute;
+    right:4em;
+
+}
+
+img.img_girl{
+	
+	right: 3em;
+}
+
+img.img_old{
+	right: 3.4em;
+}
+
+p.brns_demo{
+	margin-top: -1em;
+}
+
+/*-----------------------secondpage------------------------------------*/
+
+.secondpage{
+	background-color: #22a9e2;
+	box-shadow:0px 3px 15px -1px #A2A0A0;
+	z-index: 1;
+	width: 101%;
+
+
+}
+
+
+.second_para{
+	margin-top:7.8em;
+	margin-left: 2.6em;
+
+}
+
+p.second_para1{
+	color: white;
+	font-size: 24px;
+	margin-left: 1.5em;
+	margin-bottom: 25px;
+}
+
+p.second_para2{
+	color: white;
+	font-size: 14px;
+	margin-left: 2.5em;
+}
+
+img.mob{
+	margin-left: 3em;
+}
+
+.btn-outlined {
+    border-radius: 0;
+    -webkit-transition: all 0.3s;
+       -moz-transition: all 0.3s;
+            transition: all 0.3s;
+}
+.btn-outlined.btn-primary {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    font-size: 18px;
+
+}
+.btn-outlined.btn-primary:hover,
+.btn-outlined.btn-primary:active {
+    color: #FFF;
+    background: transparent;
+    border-color: white:
+    font-size:18px;
+}
+.second_butns{
+	margin-left: 4em;
+	margin-top: 5em;
+}
+
+a.btn.btn-outlined.hhh.btn-primary{
+	position: relative;
+	left: 2em;
+}
+
+
+
+/*------------------------Third page-------------------------------------------*/
+
+.thirdpage{
+	margin-top: 2.5em;
+	margin-left: 77px;
+	
+	
+}
+
+.third_left_content{
+	border: 1px solid red;
+	width:358px;
+	height: 382px;
+	position: absolute;
+	top: 1em;
+	    background: rgba(255,255,255,0.9);
+    border-color: transparent;
+    box-shadow:0px 0px 5px 3px #E6E6E6;
+}
+
+.third_left_img{
+	background-image: url(images/a_logo.png);
+	position: relative;
+	width:358px;
+	height: 382px;
+	top: 0;
+	background-repeat: no-repeat;
+	    left: 5em;
+    top: 4.7em;
+	/*background-size: cover; */
+}
+
+p.ready_left1{
+	margin: 1.2em 1em 1em 1em;
+    font-size: 32px;
+	color: #939393;
+ font-family: tregular;
+	
+}
+
+.ready_left2{
+	margin: 1.2em 2em 1em 2em;
+    font-size: 14px;
+	color: #939393;
+	 font-family: tregular;
+}
+
+a.btn.btn-outlined.btn-primary.atrcfetures{
+	background-color: #22a9e2;
+	    margin-left: 3.7em;
+    margin-top: 1.5em;
+    position: relative;
+}
+
+.third_right{
+	    margin-top: 1em;
+   
+    width: 750px;
+}
+.third_right_content{
+	border: 1px solid red;
+	  width: 750px;
+	height:382px;
+	position: absolute;
+	top: 0em;
+	left: 0em;
+	    background:#22a9e2;
+    opacity: 0.9;
+    border-color: transparent;
+    box-shadow:0px 0px 5px 3px #E6E6E6;
+    padding: 40px 0px 47px 25px;
+}
+
+.third_right_img{
+	background-image: url(images/ping.png);
+	position: relative;
+	  width: 750px;
+	height:382px;
+	top: 0;
+	background-repeat: no-repeat;
+	    left: 17em;
+    top: 4em;
+}
+
+td.pull-left.id_pwd.new_text1{
+	color: white;
+}
+p.pricing{
+	color: white;
+	font-size: 36px;
+	/*font-family: tregular;*/
+	
+}
+
+table{
+	margin-top: 5em;
+}
+
+
+ul.nav.nav-pills.navbar-nav.red.col-md-12.col-lg-12.nav_menu{
+	margin-left: -4em;
+}
+
+p.para_fr_tbl{
+    color: white;
+    font-size: 14px;
+    position: relative;
+    left: -.6em; 
+    top: -.8em;
+}
+
+td.second_td{
+	position: relative;
+    left: -4em;
+    color: #1481ae;
+}
+
+a.btn.btn-outlined.btn-primary.pull-right.sub_btn{
+	margin-top: -2.5em;
+}
+.navbar-nav>li>a{
+	top: 0 !important;
+}
+/*------------------------fourth page-------------------------------*/
+
+td.ltl{
+	    position: relative;
+    top: -0.4em;
+}
+
+td.ltl.fb.pull-left.id_pwd.new_text1{
+	position: relative;
+    top: -0.8em;
+}
+td.second_td.ms.ltl{
+	position: relative;
+    top: -0.8em;
+}
+td.tm.second_td {
+    position: relative;
+    top: -1.2em;
+}
+td.tm.pull-left.id_pwd.new_text1 {
+    position: relative;
+    top: -1.2em;
+}
+.fourthpage{
+	margin-top: 70px;
+	margin-left: 0px;
+	
+	
+}
+
+div .firstspace{
+
+ width:213px;
+
+
+}
+
+div .secondspace
+
+{
+  width:923px;
+  height:402px;
+
+}
+div .slidersize{
+
+	width: 1210px;
+    height: 402px;
+}
+
+/*------------------------fourth page-------------------------------*/
+ .fifthpage{
+/*
+    margin-top: 40px;
+    margin-left: 0px;
+    margin-right: 0px;
+	height: 273px;*/
+
+	margin-top: 5em;
+    margin-left: 0px;
+    margin-right: 7em;
+    height: 273px;
+    /*border-color: transparent;*/
+}
+	
+
+}
+
+#setbox{
+
+   height:273px;
+   box-shadow: 0px 0px 0px 2px;
+
+
+
+}
+
+
+
+/*------------------------sixth(contact) page-------------------------------*/
+
+div .txt{
+
+    font-size:36px;
+    font-size: 36px;
+    margin-top: 56px;
+    margin-left: 4.7%;
+    color: white;
+}
+
+
+div .adjust1{
+
+	margin-left: -4%;
+}
+
+
+
+div .number{
+
+  font-size:60px;
+  color: #e73a59;
+
+
+}
+
+div .text1{
+
+    color:#22aae2;
+    position: relative;
+    top: -6px;
+
+}
+
+span.number1{
+	font-size: 54px;
+}
+
+span.number2{
+	font-size:48px; 
+}
+
+span.text2{
+	font-size: 16px;
+	color: white;
+}
+
+.adjust2{
+	    margin-left: -4.1%;
+    margin-top: 4.3em;
+}
+
+span.text2{
+	margin-left: 1em;
+	
+}
+
+p.adres{
+	    margin-left: 2.8em;
+	    word-spacing: 1px;
+	    /*text-align: justify;*/
+}
+
+img.img_phon{
+	margin-left: -5em;
+}
+
+span.number3{
+	font-size: 18px;
+	color: white;
+	position: relative;
+	left: .8em;
+}
+
+span.number4{
+	font-size: 18px;
+	color: white;
+	position: relative;
+    left: -1.5em;
+}
+
+.third_last_box{
+	     margin-left: 1.4em;
+}
+
+span.number5{
+	color: white;
+	font-size: 18px;
+	position: relative;
+	left: .8em;
+	/*top: -6px;*/
+}
+
+span.number6{
+	color: white;
+	font-size: 18px;
+	position: relative;
+	left: 3.2em;
+	/*top: -0.5em;*/
+}
+
+i.envlp_icon{
+	margin-top: .4em;
+	margin-left: 4px;
+}
+
+.last_img{
+	background-image: url(images/Welcome_Back_to_School.jpg);
+	position: relative;
+	height: 500px;
+	top: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+.last_content{
+	
+    background-color: rgba(34, 170, 226, 0.88);   
+    height: 500px;
+    position: absolute;  
+    top: 179.7em;
+}
+
+.last1_img{
+	background: url("images/triangle.png");
+	position: relative;
+	width:263px;
+   	height:177px;
+	    top: 2.8em;
+	background-repeat: no-repeat;
+}
+
+.last1_content{
+	 width:263px;
+   height:177px;
+   top: 2.9em;
+    padding: 30px;
+	 position: absolute;
+    box-shadow: 0px 0px 1px 1px #9C8D8D;
+   /* opacity: 0.9;*/
+}
+.smlbx_phon{
+    margin-left: 14em;}
+
+
+
+span.menus.brdr_mnus{
+	border-bottom: 3px solid white;
+}
+
+/*///////////////////////*/
+
+
+#plusplan{
+	display: none;
+}
+
+#premiumplan{
+	display: none;
+}
+
+.ftr{
+	/*text-align: center;*/
+	margin-top: -5px;
+	position: relative;
+    left: 13em;
+    font-size: 14px;
+    font-family: Myriad Pro;
+}
+
+
+
+/*/////////header*/
+
+/*.navigation{
+margin-top:5%;
+}*/
+.nav-color{
+background-color:#22aae2;
+border-radius: 0px 0px 200px 0px;
+
+}
+.nav-width{
+width:48%;
+overflow:hidden;
+}
+.nav-border{
+border-top:2px solid #22aae2;
+margin-top: 6em;
+}
+
+.navbar-inverse .navbar-nav>.active>a{
+	background-color: #e73a59 !important;
+}
+
+img.logo_design{
+	margin-left: 5%;
+    margin-bottom: 11px;
+    margin-top: 11px;
+}
+.rit_hdr{
+    position: relative;
+    top: 1.3em;
+    left: 2.2em;
+}
+img.twitter_icon{
+	position: relative;
+    top: 5px;
+}
+
+img.google_icon{
+	    position: relative;
+    left: -8px;
+    top: 3px;
+}
+
+img.utube_icon{
+	position: relative;
+    top: 5px;
+}
+
+
+img.skype_icon{
+position: relative;
+    top: 2.3em;
+    float: left;
+    left: 2.5em;
+}
+
+
+
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+
+  .row.sixthpage.tregular{
+  	margin-top: 5em;
+  }

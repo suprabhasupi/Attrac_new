@@ -1,0 +1,108 @@
+@font-face {
+        font-family:tregular;
+        src: url(font/Titillium-Regular.otf);
+}
+.tregular{
+    font-family:tregular;
+}
+@font-face {
+        font-family:tlight;
+        src: url(font/TTitillium-Light.otf);
+}
+.tlight{
+    font-family:tlight;
+}
+@font-face {
+        font-family:tbold;
+        src: url(font/Titillium-Bold.otf);
+}
+.tbold{
+    font-family:tbold;
+}
+
+
+.btn_height{
+
+	height: 120%;
+}
+.mtop{
+	    margin-top: -18%;
+	        
+}
+.mtop1{
+	        margin-top: -7% !important;
+	        
+}
+.attd{
+	width:320px;
+	height:300px;
+	background-color:#0169ae;
+	border-radius: 2px;
+	box-shadow: 0px 0px 5px 3px grey;
+	color:white;
+	}
+
+.minheight{
+
+	    min-height: 600px;
+}
+.sqr{
+	margin-left: 20%;
+	text-align: center;
+	width:100%;
+	height:80px;
+	background-color:#012999;
+	border-radius: 2px;
+	box-shadow: 0px 0px 2px 2px grey;
+	color:white;
+}
+.sqr p{
+	margin-top: -10%;
+}
+
+.faclty{
+	width:250px;
+	height:200px;
+	background-color:#3D3F7C;
+	border-radius: 2px;
+	box-shadow: 0px 0px 5px 3px grey;
+	color:white;
+	}
+
+.fclty_last{
+	margin-top:5%;margin-left: 30%;
+}
+.marks{
+	width:400px;
+	height:250px;
+	background-color:#3D3F7C;
+	border-radius: 2px;
+	box-shadow: 0px 0px 5px 3px grey;
+	color:white;
+	}
+.f24{
+	font-size: 24pt;
+}
+.f20{
+	font-size: 20pt;
+}
+.f18{
+	font-size: 18pt;
+}
+.pp{
+	color:grey;
+}
+.select_wide{
+
+
+ color:black !important; border:0px; border-bottom:1px solid grey;
+    width:100%  ! important;
+	height:50px;
+	width:30%;
+	
+
+}
+
+input[type="radio"]:checked + label span {
+    background-image: radial-gradient(#FF5ABA, deepPink);
+}

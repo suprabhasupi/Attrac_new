@@ -1,0 +1,90 @@
+
+
+
+
+/*------------- BUTTONS -----------------*/
+
+.buttons {
+    border: 2px solid none;
+    padding: 16px 32px;
+    width: 115px;
+    height: 48px;
+    border-radius: 10px;
+    font-size: 16px;
+    color:white;
+    
+	text-decoration:none;
+	/*border-color: transparent;*/
+	box-shadow:0px 0px 3px 1px #C7C4C4;
+	
+
+position: relative;
+top: 5em;
+}
+
+
+.buttons_ok{
+	background-color:#22aae2;
+}
+
+.buttons_ok:hover{
+	background-color:#6dc5ea;
+	text-decoration:none;
+	color: white;
+}
+
+.buttons_ok:focus{
+	background-color:#6dc5ea;
+	text-decoration:none;
+	color: white;
+}
+
+.buttons_can{
+	
+    background-color:#666666;
+}
+
+.buttons_can:hover{
+	
+    background-color:#989a9b;
+    text-decoration:none;
+    color: white;
+}
+
+.buttons_can:focus{
+	
+    background-color:#989a9b;
+    text-decoration:none;
+    color: white;
+}
+
+
+
+/*--------------------form-box------------------*/
+
+.form-box{
+box-shadow:0px 0px 5px 3px #c7bfbf;
+background-color:#22aae2;
+width: 256px;
+height: 146px;
+}
+
+
+
+
+
+
+/*---------input text-----------*/
+#input_txt{
+	position: relative;
+	left: 24px;
+	color: black;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-top-color: transparent;
+	background-color: transparent;
+	outline: none;  
+	padding-left: 8px;
+	font-size: 16px;
+
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login Page </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="js/jquery2.js"></script> -->
+   
+    <link href="css/login_page.css" rel="stylesheet">
+    <link href="css/full.css" rel="stylesheet">
+    <link href="css/today.css" rel="stylesheet">
+<style type="text/css">
+  body{
+  background: url('images/login_bg.jpg');
+
+    /*-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+  }
+</style>
+    </head>
+    
+<!-- 22aae2 -->
+
+<body class="container-fluid tregular">
+    <div class="row">
+      <!-- Menu -->
+      <img src="images/logo_login.png" class="logo">
+      <div class="col-md-12 pg">
+          <div class="col-md-3">&nbsp;</div>
+          <div class="col-md-5 login_box">
+          <div class ="design"></div>
+          
+         
+         
+
+          <div class="design1">
+              
+                    <ul class="nav nav-pills navbar-nav red col-md-12 col-lg-12">
+                        <li class="col-md-4 col-lg-4" id="s_log"><a href="#studentlogin" class=" text-center"><span class="menus studentmenu">Student Login</span></a></li>
+
+                        <li class="col-md-4 col-lg-4" id="f_log"><a href="#facultylogin" class=" text-center"><span class="menus facultymenu">Faculty Login</span></a></li>
+
+                        <li class="col-md-4 col-lg-4" id="p_log"><a href="#parentslogin" class="text-center prnt_list"><span class="menus parentmenu">Parent Login</span></a></li>
+                    </ul>
+          </div>
+
+          <div class="design2"></div>
+          <div class="design5">
+           <div class="col-md-12 design2_box">
+           <div class="col-md-2">&nbsp;</div>
+           <div id="studentlogin">
+
+          <table class=" col-md-12 table table-hover tbl_margin table-condensed tbl font">
+            <tbody class="tregular">          
+            <tr>
+              
+              <td class="pull-left id_pwd"> E-mail &nbsp;/&nbsp;Roll Number</td>
+              <td><input type="email" value="" class="course_txt trans_input" style="width:100%;" writeonly/></td>
+              
+            </tr>
+
+                      <tr>                      
+              <td class="pull-left id_pwd">Password </td>
+              <td><input type="pwd" value="" class="course_txt trans_input" style="width:100%;" writeonly/></td>  
+              </tr> 
+
+              <tr>
+              <td></td>
+             <td class="pull-right forogt_pwd"> <a href="#" class="forget" >Forget Password?</a></td>
+              </tr>
+        </tbody>
+        </table>
+
+          <button type="button" class="btn btn-default new_btn pull-right">LOGIN</button>
+
+           <button type="button" class="btn btn-default cn_bt pull-right">CANCEL</button>
+
+
+
+          
+          
+</div>
+
+          <div id="facultylogin">
+               <table class=" col-md-12 table table-hover tbl_margin table-condensed tbl font">
+            <tbody class="tregular">          
+            <tr>
+              
+              <td class="pull-left id_pwd"> E-mail &nbsp;/&nbsp;ID</td>
+              <td><input type="email" value="" class="course_txt trans_input" style="width:100%;" writeonly/></td>
+              
+            </tr>
+
+                      <tr>                      
+              <td class="pull-left id_pwd">Password </td>
+              <td><input type="pwd" value="" class="course_txt trans_input" style="width:100%;" writeonly/></td>  
+              </tr> 
+
+              <tr>
+              <td></td>
+             <td class="pull-right forogt_pwd"> <a href="#" class="forget" >Forget Password?</a></td>
+              </tr>
+        </tbody>
+        </table>
+
+          <button type="button" class="btn btn-default new_btn pull-right">LOGIN</button>
+
+           <button type="button" class="btn btn-default cn_bt pull-right">CANCEL</button>
+
+              </div>
+
+
+
+
+              <div id="parentslogin">
+             <table class=" col-md-12 table table-hover tbl_margin table-condensed tbl font">
+            <tbody class="tregular">          
+            <tr>
+              
+              <td class="pull-left id_pwd"> E-mail &nbsp;/&nbsp;ID</td>
+              <td><input type="email" value="" class="course_txt trans_input" style="width:100%;" writeonly/></td>
+              
+            </tr>
+
+                      <tr>                      
+              <td class="pull-left id_pwd">Password </td>
+              <td><input type="pwd" value="" class="course_txt trans_input" style="width:100%;" writeonly/></td>  
+              </tr> 
+
+              <tr>
+              <td></td>
+             <td class="pull-right forogt_pwd"> <a href="#" class="forget" >Forget Password?</a></td>
+              </tr>
+        </tbody>
+        </table>
+
+          <button type="button" class="btn btn-default new_btn pull-right">LOGIN</button>
+
+           <button type="button" class="btn btn-default cn_bt pull-right">CANCEL</button>
+
+              </div>
+
+
+ <div class="col-md-2">&nbsp;</div>
+           </div>
+              </div>
+
+
+
+           </div>
+<script>
+$(document).ready(function(){
+    $("#s_log").click(function(){
+        $("#parentslogin").hide();
+         $("#facultylogin").hide();
+           $("#studentlogin").show();
+             $(this).css("border-bottom", "4px solid white");
+                         $(this).css("margin-top","-1em");
+                         $("#f_log").css("border-bottom","none");
+                         $("#p_log").css("border-bottom","none");
+                          $(".studentmenu").css({top:19, position:'relative'});
+
+
+    });
+     $("#f_log").click(function(){
+        $("#parentslogin").hide();
+         $("#studentlogin").hide();
+         $("#facultylogin").show();
+
+         $(this).css("border-bottom", "4px solid white");
+         $(this).css("margin-top","-1em");
+         // $(".facultymenu").css("margin-top","1em");
+         $(".facultymenu").css({top:19, position:'relative'});
+
+    $("#p_log").css("border-bottom","none");
+    $("#s_log").css("border-bottom","none");
+
+          
+    });
+
+    $("#p_log").click(function(){
+       $("#facultylogin").hide();
+        $("#studentlogin").hide();
+         $("#parentslogin").show();
+                $(this).css("border-bottom", "4px solid white");
+                         $(this).css("margin-top","-1em");
+                         $("#f_log").css("border-bottom","none");
+                         $("#s_log").css("border-bottom","none");
+                          $(".parentmenu").css({top:19, position:'relative'});
+
+
+
+
+    });
+});
+</script>
+
+<script>
+     //   $(document).ready(function(){
+     //       $("#studentlogin").click(function(){
+      //          $(this).css("border-bottom", "4px solid white");
+     //       });
+    //    });
+</script>
+
+
+
+<script>
+        $(document).ready(function(){
+            $(".btn_visited").click(function(){
+                $(this).css("background-color", "#00bfa5");
+            });
+
+             $(".can_but").click(function(){
+                $(this).css("color", "#938C8C");
+            });
+        });
+</script>
+
+
+           <div class="col-md-4">&nbsp;</div>
+         
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+<!-- cscsscccscs -->
+
+
+
+
+

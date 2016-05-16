@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/new_css.css">
+     <!-- <script type="text/javascript" src="js/jquery.min.js"></script> -->
+     <!-- This demo works with jquery library -->
+
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+    <script type="text/javascript" src="js/sliderdown1.js"></script>
+    <script type="text/javascript" src="js/jquery2.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="homepage.css">
+	<link rel="stylesheet" type="text/css" href="css/login_page.css">
+	<link rel="stylesheet" type="text/css" href="css/myriad.css">
+	<script>
+        jQuery(document).ready(function ($) {
+            
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:900,$Opacity:2}
+            ];
+            
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+            
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizing
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 932);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+    </script>
+     <style>
+        
+        /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('img/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+        /* jssor slider arrow navigator skin 12 css */
+        /*
+        .jssora12l                  (normal)
+        .jssora12r                  (normal)
+        .jssora12l:hover            (normal mouseover)
+        .jssora12r:hover            (normal mouseover)
+        .jssora12l.jssora12ldn      (mousedown)
+        .jssora12r.jssora12rdn      (mousedown)
+        */
+        .jssora12l, .jssora12r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 30px;
+            height: 46px;
+            cursor: pointer;
+            background: url('img/a12.png') no-repeat;
+            overflow: hidden;
+        }
+        .jssora12l { background-position: -16px -37px; }
+        .jssora12r { background-position: -75px -37px; }
+        .jssora12l:hover { background-position: -136px -37px; }
+        .jssora12r:hover { background-position: -195px -37px; }
+        .jssora12l.jssora12ldn { background-position: -256px -37px; }
+        .jssora12r.jssora12rdn { background-position: -315px -37px; }
+    </style>
+
+
+
+</head>
+<body>
+<!-- <div class="container col-md-12"> -->
+<div class="container col-md-12 col-sm-12 col-xs-12">
+<div class="row">
+     <div class=" col-md-12 col-sm-12 col-xs-12 home_page">
+        <!-- <img src="images/children.jpg"> -->
+ <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="col-md-9 col-sm-9 col-xs-9">
+    <img src="images/logo_login.png" class="logo_design" style="width: 72px;height: 65px;">
+    </div>
+    <div class="col-md-3 col-xs-3 col-sm-3 rit_hdr pull-right">
+    <img src="images/fb.png" class="fb_icon">
+    <img src="images/twitter.png" class="twitter_icon">
+    <img src="images/google.png" class="google_icon">
+    <img src="images/utube.png" class="utube_icon">
+
+    </div>
+    </div>
+    <!-- <img src="images/logo_login.png" class="logo_design" style="width: 72px;height: 65px;"> -->
+		<div class="navigation">
+<nav class="nav-border">
+<nav class="navbar navbar-inverse nav-color nav-width">
+
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header ">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+          <li class="active"><a href="#">VIEW DEMOC</a></li>
+      
+      <li><a href="#">FEATURES</a></li>
+      <li><a href="#">PRICING</a></li>
+      <li><a href="#">CONTACT</a></li>
+      <li><a href="#">LOGIN</a></li>
+        
+      </ul>
+     
+     
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</nav>
+</div>
+
+
+
+		<div class="col-md-12 hdr">&nbsp;</div>
+
+		<div class="head_img block1">
+		<img src="images/v3.png">
+		<p class="manage">Manage institutions easily <br>than before</p>
+		</div>
+
+		<div class="three_box col-md-12 col-sm-12 col-xs-12">
+		<div class="col-md-3 col-md-offset-1 col-sm-3 col-lg-3  three1_box">
+		  <div class="threea_box col-md-9">
+		  <p class="three_box_para">Easy fun for <span class="para_m"> students </span> <br>Login and manage exams <br> and timetables</p>
+		  </div> 
+		   <img src="images/Home-Slide-4.png" class="img_box">
+		</div>
+
+		<div class="col-md-3 col-md-offset-1 three1_box col-sm-3 col-xs-3">
+		<div class="threea_box col-md-9">
+			 <p class="three_box_para">Easy fun for <span class="para_m"> teacher </span> <br>Login and manage exams <br> and timetables </p>
+		  </div>
+		  <img src="images/business-woman.png" class="img_box img_girl">
+		</div>
+
+		<div class="col-md-3 col-md-offset-1 col-sm-3 col-xs-3 three1_box">
+		<div class="threea_box col-md-9">
+			 <p class="three_box_para">Easy fun for <span class="para_m"> administrator </span> <br>Login and manage exams <br> and timetables </p>
+		  </div>
+		  <img src="images/old.png" class="img_box img_old">
+		</div>
+
+		</div>
+			</div>
+			
+		 <div class="row secondpage col-md-12 col-sm-12 col-xs-12">
+		 
+		 <div class="col-md-5 col-sm-12 col-lg-5 col-xs-12">
+		 <div class="second_para col-sm-12 col-xs-12 col-sm-12 tregular">
+		 <p class="second_para1">Attrac the easy way to Manage</p>
+		 <p class="second_para2">This is Photoshop's version of alone, as a protest against the government's failure to compensate him for his imprisonment in Russia for a trading debtsonment in Russia for a trading debt.</p>
+		 </div>
+		 <div class="second_butns col-sm-12 col-xs-12">
+		 <p class="col-sm-12 col-xs-12 brns_demo">
+		 <a href="#" class="btn btn-outlined btn-primary">SIGN UP FOR NEWSLETTER</a>
+		<a href="#" class="btn btn-outlined hhh btn-primary">REQUEST DEMO</a></p>
+		 </div>
+		 </div>
+
+		 <div class="col-md-7 col-xs-7 col-sm-7">
+
+		 <img src="images/attrac_mobile.png" class="mob">
+		 </div>
+
+		 </div>
+</div>
+ 		
+
+ 		<div class="row thirdpage">
+             
+		 <div class="col-md-4 col-sm-12 col-xs-12 third_left">
+		 <div class="third_left_img"></div>
+		 <div class="third_left_content">
+		 <p class="ready_left1">Ready to learn more</p>
+		 <p class="ready_left2">alone, as a protest against the government's failure to compensate him for his imprisonment in Russia for a trading debt. After Perceval's death, parli Just a note: why are you putting such a high Z-index on the overlay? Z-indexes are not global; there is no need to 'hack' a high or low value to make them work.</p>
+		 <p><a href="#" class="btn btn-outlined btn-primary atrcfetures">ATTRAC FEATURES</a></p>
+		 </div>
+		 </div>
+
+  		
+          <div class="col-md-8  col-sm-12 col-xs-12 third_right" style="border:1px solid red;">
+           <div class="third_right_img col-sm-12 col-xs-12 "></div>
+
+		 <div class="third_right_content tregular">
+		 	<p class="pricing">Pricing plans</p>
+          <div class="desin1">
+              
+                    <ul class="nav nav-pills navbar-nav red col-md-7" style="position: relative; left: -1.8em; font-size: 14px;top: -1.4em;">
+                        <li class="col-md-4 col-lg-4" id="bp_log"><a href="#basicplan" class=" text-center"><span class="menus studentmenu brdr_mnus">BASIC PLAN</span></a></li>
+
+                        <li class="col-md-4 col-lg-4" id="pp1_log"><a href="#plusplan" class=" text-center"><span class="menus facultymenu brdr_mnus">PLUS PLAN</span></a></li>
+
+                        <li class="col-md-4 col-lg-4" id="pp2_log"><a href="#premiumplan" class="text-center prnt_list"><span class="menus parentmenu brdr_mnus">PREMIUM PLAN</span></a></li>
+                    </ul>
+          </div>
+
+          
+          <div class="desgn5">
+           <div class="col-md-12 design2_box">
+           <!-- <div class="col-md-2">&nbsp;</div> -->
+           <div id="basicplan">
+           <p class="para_fr_tbl">After Rudolf Peierls and Otto Frisch at the University of Birmingham calculated that a small sphere of pure uranium-235 could explode with the power of thousands of tons of dynamite</p>
+          <table class=" col-md-12 table tbl_margin table-condensed tbl font" style="margin: -2px; margin-left: -2.8em;">
+           
+		 <tbody class="tregular">          
+            <tr>
+              
+              <td class="pull-left id_pwd new_text1">Attendance &nbsp;</td>
+              <td class="second_td">Exam Time Tables</td>
+              
+
+            </tr>
+
+                      <tr>                      
+              <td class="ltl pull-left id_pwd new_text1">Marks Memos</td>
+              <td class="ltl second_td">Previous Question Papers</td>  
+              </tr> 
+
+              <tr>
+              <td class="ltl fb pull-left id_pwd new_text1">Feedback</td>
+             <td class="second_td ms ltl">Messaging</td>
+              </tr>
+
+              <tr>
+              <td class="tm pull-left id_pwd new_text1">Class Time Tables</td>
+              <td class="tm second_td">Online Exams
+              </td>
+        </tbody>
+        </table>
+<p class="col-sm-12"><a href="#" class="btn btn-outlined btn-primary pull-right sub_btn">SUBSCRIBE</a></p>
+          
+</div>
+
+          <div id="plusplan">
+                <table class=" col-md-12 table tbl_margin table-condensed tbl font" style="margin: 10px; margin-left: -2.8em;">
+           
+		 <tbody class="tregular">          
+            <tr>
+              
+              <td class="pull-left id_pwd new_text1">Attendance &nbsp;</td>
+              <td class="second_td">Exam Time Tables</td>
+              
+
+            </tr>
+
+                      <tr>                      
+              <td class="pull-left ltl id_pwd new_text1">Marks Memos</td>
+              <td class="second_td ltl">Previous Question Papers</td>  
+              </tr> 
+
+              <tr>
+              <td class="pull-left ltl id_pwd new_text1">Feedback</td>
+             <td class="second_td ltl">Messaging</td>
+              </tr>
+
+              <tr>
+              <td class="pull-left ltl id_pwd new_text1">Class Time Tables</td>
+              <td class="second_td ltl">Online Exams
+              </td>
+        </tbody>
+        </table>
+<p class="col-sm-12"><a href="#" class="btn btn-outlined btn-primary pull-right sub_btn">SUBSCRIBE</a></p>
+          
+          
+     </div>
+
+
+
+
+              <div id="premiumplan">
+             <table class=" col-md-12 table tbl_margin table-condensed tbl font" style="margin: 10px; margin-left: -2.8em;">
+           
+		 <tbody class="tregular">          
+            <tr>
+              
+              <td class="pull-left id_pwd new_text1">Attendance &nbsp;</td>
+              <td class="second_td">Exam Time Tables</td>
+              
+
+            </tr>
+
+                      <tr>                      
+              <td class="pull-left ltl id_pwd new_text1">Marks Memos</td>
+              <td class="second_td">Previous Question Papers</td>  
+              </tr> 
+
+              <tr>
+              <td class="pull-left ltl id_pwd new_text1">Feedback</td>
+             <td class="second_td">Messaging</td>
+              </tr>
+
+              <tr>
+              <td class="pull-left ltl id_pwd new_text1">Class Time Tables</td>
+              <td class="second_td ltl">Online Exams
+              </td>
+        </tbody>
+        </table>
+<p class="col-sm-12"><a href="#" class="btn btn-outlined btn-primary pull-right sub_btn">SUBSCRIBE</a></p>
+          
+
+              </div>
+
+
+ <div class="col-md-2">&nbsp;</div>
+           </div>
+              </div>
+
+
+
+           </div>
+
+
+<script type="text/javascript">
+	    // console.log("working");
+    $("#bp_log").click(function(){
+        $("#plusplan").hide();
+         $("#premiumplan").hide();
+           $("#basicplan").show();
+             $(".studentmenu").css("border-bottom", "3px solid #1481ae");
+                         $(this).css("margin-top","-1em");
+                         $(".parentmenu").css("border-bottom","3px solid white");
+                         $(".facultymenu").css("border-bottom","3px solid white");
+                          $(".studentmenu").css({top:19, position:'relative'});
+                           $(".studentmenu").css("color", "#1481ae");
+                           $(".parentmenu").css("color","white");
+                         $(".facultymenu").css("color","white");
+
+    });
+	// $(document).ready(function(){
+
+     $("#pp1_log").click(function(){
+        $("#premiumplan").hide();
+         $("#basicplan").hide();
+         $("#plusplan").show();
+
+         $(".facultymenu").css("border-bottom", "3px solid #1481ae");
+         $(this).css("margin-top","-1em");
+         // $(".facultymenu").css("margin-top","1em");
+         $(".facultymenu").css({top:19, position:'relative'});
+         $(".facultymenu").css("color", "#1481ae");
+
+    $(".studentmenu").css("border-bottom","3px solid white");
+    $(".parentmenu").css("border-bottom","3px solid white");
+     $(".studentmenu").css("color","white");
+    $(".parentmenu").css("color","white");
+
+          
+    });
+
+    $("#pp2_log").click(function(){
+       $("#basicplan").hide();
+        $("#plusplan").hide();
+         $("#premiumplan").show();
+                $(".parentmenu").css("border-bottom", "3px solid #1481ae");
+                         // $(this).css("margin-top","-1em");
+                         $(".studentmenu").css("border-bottom","3px solid white");
+                         $(".facultymenu").css("border-bottom","3px solid white");
+                          // $(".parentmenu").css({top:19, position:'relative'});
+                           $(".parentmenu").css("color", "#1481ae");
+                           $(".studentmenu").css("color","white");
+                         	$(".facultymenu").css("color","white");
+
+
+
+
+    });
+// });
+</script>
+
+
+          
+         </div>
+
+    
+
+
+
+
+		 </div>
+
+
+<div class="row fourthpage">
+
+<!-- slider begins -->
+
+
+     <div class="col-md-1 col-sm-1 firstspace"></div>
+
+     <div class="col-md-9 col-sm-9 secondspace" id="jssor_1" style="position: relative;overflow: hidden; width: 932px;
+    height: 403px; visibility: hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 932px; height:403px; overflow: hidden;">
+            <div data-p="112.50" style="display: none;">
+            <img data-u="image" src="img/04.jpg" />
+               <!--  <img data-u="image" src="images/grl2.png" style="width: 125px; height: 160px;">
+                <p>Mrs. Lai Ching Po </p>
+                <img src="images/cma.png"><span>his is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </span> -->
+            </div>
+            <div data-p="112.50" style="display: none;">
+                <img data-u="image" src="img/04.jpg" />
+            </div>
+            <div data-p="112.50" style="display: none;">
+                <img data-u="image" src="img/05.jpg" />
+            </div>
+            <div data-p="112.50" style="display: none;">
+                <img data-u="image" src="img/09.jpg" />
+            </div>
+            <a data-u="ad" href="http://www.jssor.com" style="display:none">jQuery Slider</a>
+        
+        </div>
+      <!-- Bullet Navigator --> 
+        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+             
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
+        </div>
+        <!-- Arrow Navigator --> 
+       <!-- <span data-u="arrowleft" class="jssora12l" style="top:0px;left:0px;width:30px;height:46px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2"></span> -->
+    </div> 
+    
+</div>
+
+<!------------------fifth page(slider2)begings here-->
+
+<div class="row fifthpage">
+       <div class="col-md-2 col-lg-2 col-sm-2">
+       	
+
+       </div>
+       <div class="col-md-8 col-lg-8 col-sm-8" id="setbox">
+       	
+<!-- <div class="container"> -->
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="img/04.jpg" alt="Chania" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="img/05.jpg" alt="Chania" width="460" height="345">
+      </div>
+    
+      <div class="item">
+        <img src="img/04.jpg" alt="Flower" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="img/05.jpg" alt="Flower" width="460" height="345">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+<!-- </div> -->
+
+
+       </div>
+       <div class="col-md-2 col-lg-2 col-sm-2">
+       	
+
+       </div>
+</div>
+
+<!-- ----------------conatct page(last)begings here---------- -->
+<div class="row sixthpage tregular">
+<div class="last_img"></div>
+	<div class="last_content">
+
+   <div class="col-md-12 col-sm-12 col-xs-12 txt">
+    Come Join the Change
+   </div>
+   <div class="row adjust1">
+
+      <div class="smbox col-md-3 col-md-offset-1 col-lg-3 col-sm-9 col-xs-9 ">
+      <div class="last1_img"></div>
+	  <div class="last1_content">
+      <span class="number">32</span><br>
+      <span class="text1">SCHOOLS JOINED ATTARC</span><br>
+      and still counting      
+      </div>
+      </div>
+
+
+
+      <div class="smbox2 col-md-3 col-md-offset-1 col-lg-3 col-sm-9 col-xs-9 ">
+       <div class="last1_img"></div>
+	  <div class="last1_content">
+      <span class="number number1">3,04,874</span><br>
+      <span class="text1">STUDENTS USING ATTARC</span><br>
+      and still counting
+        </div>
+      </div>
+      <div class="smbox3 col-md-3 col-md-offset-1 col-lg-3 col-sm-9 col-xs-9 ">
+      <div class="last1_img"></div>
+	  <div class="last1_content">
+      <span class="number number2">30,04,874</span><br>
+      <span class="text1">STUDY MATERIAL ON ATTARC</span><br>
+      and still counting
+        </div>
+      </div>
+   </div>
+
+
+ <div class="row adjust2">
+      <div class="col-md-3 col-md-offset-1 col-lg-3 col-sm-9 col-xs-9 ">
+       <img src="images/home.png" class="home_icon">
+     <span class="text2">ATTRAC ERP SOLUTIONS PVT LTD</span></i>
+      <p class="adres">Sourabha complex,#5,A M Industrial Estate,12th KM Stone, Hosur Road, Near Kudlu Gate,
+	Garevebhavi Palya, Bangalore, Karnataka.India – 560068</p>
+        
+      </div>
+
+      <div class="col-md-3 col-md-offset-1 col-lg-3 col-sm-9 col-xs-9 smlbx_phon">
+     <img src="images/phone_icon.png" class="img_phon">
+      <span class="number3"> 74852478514 </span> <br> <span class="number4">+91 9874521863</span>
+        
+      </div>
+      <div class="col-md-3 col-md-offset-1 col-lg-3 col-sm-9 col-xs-9 third_last_box">
+      <img src="images/msg.png" class="home_icon">
+       <span class="number5">customercare@attrac.co.in</span></i>
+       <img src="images/skype.png" class="skype_icon">
+     <span class="number6">attrac_care</span></i>
+        
+      </div>
+   </div>
+
+   <div class="row ftr">
+   <img src="images/c_icon.png">
+   <span>Attrac erp solutions private limited</span>
+   </div>
+</div>
+
+</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function () {
+var x=$(window).width();
+if(x<=360)
+{
+  $(".nav-width").css({'width':'100%'});
+}
+    $('.nav li a').click(function(e) {
+
+        $('.nav li').removeClass('active');
+
+        var $parent = $(this).parent();
+        if (!$parent.hasClass('active')) {
+            $parent.addClass('active');
+        }
+        e.preventDefault();
+    });
+});
+$(window).resize(function(){
+var x=$(window).width();
+if(x<=360)
+{
+  $(".nav-width").css({'width':'100%'});
+}
+else
+{
+  $(".nav-width").css({'width':'48%'});
+}
+})
+</script>
+
+</body>
+</html>

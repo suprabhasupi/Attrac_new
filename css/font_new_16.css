@@ -1,0 +1,16 @@
+@font-face {
+        font-family:foo;
+        src: url(C:\Windows\Fonts\Titillium Regular);
+}
+.titillium_reg{
+    font-family:Titillium Regular;
+}
+
+@font-face {
+        font-family:foo;
+        src: url(C:\Windows\Fonts\Titillium Semi Bold Italic);
+}
+.titillium_semibold{
+    font-family:Titillium Semi Bold Italic;
+}
+

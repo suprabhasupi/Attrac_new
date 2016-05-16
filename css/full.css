@@ -1,0 +1,432 @@
+/*!
+ * Start Bootstrap - Full HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+     /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+	 background-color:#f2f2f2;
+	 
+	 
+}
+
+/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
+
+.full {
+  
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.mainheader_align{
+	position: fixed;
+    background: #0071BC;
+    z-index: 2000;
+}
+i.fa-bars {
+    color: white;
+}
+
+
+
+.navbar-default .navbar-toggle {
+    border-color: #F1F3F6;
+    padding: 7px;
+}
+
+/*.navbar-default .navbar-toggle:hover{
+background:#00bfa5;
+}*/
+
+.content{
+min-height:625px;
+height:100%;
+}
+
+ul.nav.navbar-nav.mainmenu {
+    position: relative;
+    left: -176%;
+}
+
+
+.navbar{
+	height:100%;
+	background-color:#0071bc;
+}
+
+.institution{
+	color:white;
+	margin-top:5%;
+	margin-left: 1.5em;
+}
+
+.icon{
+margin-top:1.5%;
+color:white;
+font-size:22px;
+}
+
+.side-info{
+	color:white;
+	margin-top:1%;
+}
+
+.verticalLine {
+    border-left: 1px solid white;
+}
+
+
+
+/* -------------------------------------Content page -------------------------------*/
+
+.user-master{
+color:#808080;
+font-size:20px;
+margin-left:0.5%;
+min-height:60px;
+}
+
+.master{
+	background-color:#0169ae;
+	height:156px;
+	width:240px;
+	color:white;
+	
+}
+
+.masternone{
+	box-shadow:0px 0px 5px 3px #c7bfbf;
+	
+	height:150px;
+	width:240px;
+	color:white;
+	
+}
+
+.gap{
+	
+	   height:31px;
+	   width:100%;
+	
+}
+
+.adjust{
+	
+	     margin-left:43%;
+}
+
+.setheight 
+{
+	  height:120px;
+	  width:100%;
+	 
+	  
+}
+
+.note{
+	
+	width:40%;
+	height:30%;
+	margin-left:30%;
+	margin-top:5%;"
+	
+}
+
+
+
+.master p{
+	margin-left:4%;
+	margin-top:30%;
+	padding-left:15%;
+	padding-right:5%;
+}
+
+.masternone p{
+	margin-top:30%;
+	padding-left:15%;
+	padding-right:5%;
+}
+
+.master span{
+	margin-top:35%;
+	padding-left:40%;
+	padding-right:15%;
+}
+
+
+.form-content hr{
+	border:1px solid grey;
+	width:100%;
+}
+.form-content input[type="text"]{
+	border:0px;
+	border-bottom:1px solid grey;
+	bakground-color:#f2f2f2;
+	border-radius:0px;
+}
+
+.form-content select{
+	border:0px;
+	border-bottom:1px solid grey;
+	bakground-color:#f2f2f2;
+	border-radius:0px;
+}
+
+.form-attribute{
+padding-left:5%;
+color:#808080;
+font-size:15px;
+font-weight:normal;
+padding-top:1%;
+}
+
+.form-attribute input[type="radio"]{
+margin-top:0px;
+}
+
+.form-box{
+box-shadow:0px 0px 5px 3px #c7bfbf;
+background-color:white;
+}
+
+.enroll{
+border:0px;
+background-color:white;
+color:#0071bc;
+}
+
+.cancel{
+border:0px;
+background-color:white;
+color:grey;
+}
+
+.start{
+border:0px;
+background-color:white;
+color:orange;
+}
+
+/*--------------------------------Admin first time login-------------------------------------------*/
+
+
+.changep{
+	background-color:#0169ae;
+	height:365px;
+	color:white;
+
+	
+}
+.changep div {
+
+ height:75px;
+ padding-top:20px;
+}
+
+.text1
+{
+  background-color: rgba(0,0,0,0);
+  border:0px;
+  border-bottom:1px solid white;"
+}
+
+.text2
+{
+  background-color: rgba(0,0,0,0);
+  border:0px;
+  border-bottom:2px solid white;"
+}
+.setleft{
+margin-left:10%;
+}
+
+.btn-outlined.btn-primary {
+    background: #0071bc;
+    border: 3px solid #0071bc;
+	width:115px;
+	height:30px;
+}
+
+.bttn{
+	      margin-top:-35px;
+		  margin-left:-55px;
+}
+
+.bttn a{
+	
+	padding:0cm;
+}
+
+.alert{
+	   
+	   margin-top:-45px; 
+	   margin-left:8%;
+	   font-size:12px;
+}
+
+
+.tbl {
+	width:100%;
+}
+
+.tbl tr{
+	
+	width:30%;
+} 
+
+/*--------------------------------------Admin upload faculty list----------------------------------*/
+
+.tbl{
+	padding:15px;
+	border:1px;
+	width:100%;
+	text-align:center;
+	border:1px solid black;
+}
+
+ .line{
+	border-bottom:3px solid grey;
+	size:100px;
+	margin-left:15px;
+	margin-right:-10px;
+	  
+}
+.btn1 {
+	
+	background:#00bfa5;
+	height:5px;
+	width:60px;
+	text-align:center;
+	font-size:10px;
+	padding-top:2px;
+}
+
+
+.btnup  {
+	     color:#0071bc;
+		 margin-left:20px;
+}
+
+.loadline{
+	
+	border-bottom:1px solid #0071bc;
+	width:100%;
+}
+
+
+/*------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------Admin upload faculty list----------------------------------*/
+
+.reduce{
+ color:black !important; border:0px; border-bottom:1px solid grey;
+    width:75%  ! important;
+	height:50px;
+	width:30%;
+	
+}
+
+.pullcenter{
+	
+	text-align:center;
+	
+}
+.form-attribute1{
+color:#808080;
+font-size:15px;
+font-weight:normal;
+padding-top:1%;
+}
+
+
+
+/*------------------------------------------------------------------------------------------------*/
+
+
+
+/*--------------------------------------Admin upload faculty list----------------------------------*/
+.subtbl{
+	padding:15px;
+	border:1px;
+	
+	text-align:center;
+	border:1px solid black;
+	
+}
+	.subtbl{
+width:100%;
+}
+
+.subtbl tr{
+	
+	width:30%;
+} 
+
+
+/*-----------------------------------online exam results-------------------------------------------------------------*/
+
+.yellow{
+color:#ff9900;
+}
+.line{
+    style="color: #c2c2a3;
+    background-color: #c2c2a3;
+    height: 2px;"
+}
+
+.done{
+
+padding-left:60px;
+color:#0080ff;
+}
+
+.ajcenter{
+
+ width:15%;
+}
+/*------------------------------------------ Online exam.php------------------------------------------------------*/
+.cen1{
+                  text-align:center;
+				  padding-top:60px;
+ 
+}
+
+
+/*--------------------------------------student online exam----------------------------------*/
+.cen{
+                  text-align:center;
+				  padding-top:8px;
+ 
+}
+.ajdate{
+  
+      padding-top:30px; 
+	  margin-left:-20px;
+  }
+.ajtime{
+
+        padding-top:30px;
+		margin-left:15px;
+}
+
+.ajspace{
+   margin-right:20px;  
+   margin-top:2px;
+}
+/*--------------------------------------------------Footer ---------------------------------------*/
+
+
+
+.footer{
+background-color:#1f1f1f;
+min-height:40px;
+width:102%;
+color:#666666;
+padding-top:0.7%;
+position: fixed;
+bottom: 0px;
+z-index: 1000;
+}

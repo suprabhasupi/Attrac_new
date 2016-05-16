@@ -1,0 +1,61 @@
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+#contents{
+	min-height:100px;
+	
+	background-color:#2095f2;
+	font-family:Arial Black;
+	color:#9fd1f3;
+	font-size:12px;
+	
+	margin-left:-260px;
+	width:1480px;
+	height:550px;
+	}
+
+	
+#main-header{
+min-height:100px;
+
+}
+
+#nav-bar{
+background-color:#ffe401;
+margin-left:-23px;
+width:1370px;
+}
+
+
+#icon{
+color:orange;
+}
+
+
+
+
+#space{
+	min-height:60px;
+	
+}
+
+/*---------------------Page 2 close-------------------- */
+
+
+
+/* -----------------------------------------
+   Page Name 2
+----------------------------------------- */
+
+

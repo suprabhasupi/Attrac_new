@@ -1,0 +1,7 @@
+@font-face {
+        font-family:foo;
+        src: url(/css/font/Titillium-Regular.otf);
+}
+.font{
+    font-family:Titillium-Regular;
+}

@@ -1,0 +1,962 @@
+
+
+/*body{
+   
+  background:no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}*/
+
+input.course_txt.blank1_txt{
+	/*border-color: #E2D9D9;*/
+    border-bottom-width: 2px;
+}
+/*-------------------Blank2 and blank3 content page-----------------------*/
+
+
+.btn_style{
+	background:#00bfa5;
+	
+	font-size:10px;
+	    padding: 8px 18px;
+	letter-spacing: 1px;
+}
+button.btn_style:hover{
+	background:#00bfa5;
+}
+
+
+
+input.course_txt{
+	border-left-color: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+}
+
+.course_txt{
+border-left-color: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+
+}
+.table_para{
+	font-size: 1.1em;
+    color: black;
+}
+
+
+
+
+/*-------------------(blank1)Exam first page---------------------*/
+
+button.btn_style{
+		background:#00bfa5;
+	
+	font-size:13px;
+	    padding: 8px 28px;
+	letter-spacing: 1px;
+}
+
+.exam_name{
+	margin-left: 1em;
+}
+
+
+select#sel1{
+	border-bottom-color: #E4E2E2;
+    /* color: black; */
+    border-bottom-width: 2px;
+
+}
+
+
+/*.time_text{
+	width: 70%;
+}*/
+
+
+
+
+/*----------Blank5 page (after clicking on Ok botton)----------------*/
+
+.addques{
+	/*font-size: 1.5em;*/
+	font-weight: bold;
+	color: black;
+}
+
+.addques_box{
+	margin-left: 5em;
+}
+
+.fa-plus-circle{
+	color:#2D60C1;
+}
+
+/*p.error {
+    display: none;
+}*/
+
+p#error{
+	display: none;
+	color:red;
+}
+/*----------Feedback page(for student)----------------*/
+
+button.btn_fb2{
+	font-size: 1.1em;
+
+}
+
+.later_button{
+
+margin-left:2em;
+
+}
+
+.my-rating-4{
+position:relative;
+left:3em;
+}
+
+span.feedback_text{
+
+color:#383434;
+font-weight: bold;
+    position: relative;
+    bottom: 11px;
+	right:1.8em;
+
+
+}
+
+/*----------Feedback6 page(for faculty)----------------*/
+
+/*.full_box{
+
+border:2px solid #D8D8D8;
+}*/
+
+span.fb_text{
+	color:black;
+	font-size: 1.1em;
+	font-weight: bold;
+
+}
+
+.sub{
+	color:black;
+	font-size: 1.4em;
+	font-weight: bold;
+
+}
+
+a.feedback_link:link {
+    color:#2D60C1;
+    background-color: transparent;
+    text-decoration: none;
+}
+a.feedback_link:visited {
+    color:#00bfa5;
+    background-color: transparent;
+    text-decoration: none;
+}
+a.feedback_link:hover {
+    color:#00bfa5;
+    background-color: transparent;
+    text-decoration: none;
+}
+a.feedback_link:active {
+    color: #2D60C1;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+p.branch{
+color:black;
+font-weight: bold;
+
+}
+p.sem{
+	position: relative;
+    right: 13px;
+}
+
+a.feedback_link{
+	font-size: 1.2em;
+
+}
+
+
+/*----------------studentexam_page-----------------*/
+
+.ans{
+color:#A5A5B9;
+}
+
+/*.table{
+	border:none;
+}*/
+
+.goback_footer{
+	margin-top: 13em;
+}
+.finalsubmit_footer{
+	margin-top: 17em;
+}
+
+p.ques_att{
+	margin-top: -2em;
+}
+
+/*table.col-md-12.col-sm-12.table.table-hover.table-condensed.tbl.font*/
+table.tbl_margin{
+	border:none;
+}
+
+p.modal_exam{
+	font-size: 1.5em;
+	color: black;
+}
+
+
+
+/*--------exam time table for admin-----------*/
+
+.btm_mrgn{
+	border-bottom:1px solid #D6D2D2;
+}
+
+.form-box{
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.sub_can{
+	padding: 13px;
+    margin-left: -5px;
+}
+
+a.sub_button{
+margin-left: 1.5em;
+text-decoration: none;
+color: #0071BC;
+}
+
+a.can_button{
+text-decoration: none;
+color: #8E8E8E;
+}
+
+.ett1_tbl{
+    border-color: #D6D2D2;
+    color: #AFAAAA;
+}
+
+td.ett1tbl_td{
+    padding:9px;
+}
+
+tr.line_ett1{
+    border-color: #D6D2D2;
+}
+
+
+
+/*--------------------ett2_faculty page---------------------------*/
+
+table a:not(.btn), .table a:not(.btn){
+    text-decoration: none;
+}
+
+/*----------------feedback7 page----------------------*/
+
+.str_fd{
+	font-size: 1.5em;
+	letter-spacing: 1px;
+}
+
+
+/*-----------------feedback8 page---------------------------*/
+.frmbx{
+	width: 22%;
+    padding: 4em;
+	background-color: #0071BC;
+	margin:13px;
+}
+
+/*--------------------header menus--------------------------------*/
+
+/* Toggle Styles */
+
+ #wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+    overflow: scroll;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: absolute; 
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    position: absolute;
+    padding: 15px;
+    width: 100%;  
+    overflow-x: hidden; 
+}
+.xyz{
+    min-width: 360px;
+}
+#wrapper.toggled #page-content-wrapper {
+    position: relative;
+    margin-right: 0px; 
+}
+.fixed-brand{
+    width: auto;
+}
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 2px;
+}
+
+.sidebar-nav li {
+    text-indent: 15px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+    border-left: red 2px solid;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+.no-margin{
+    margin:0;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+    .fixed-brand{
+        width: 250px;
+    }
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 250px;
+    }
+    #wrapper.toggled-2 #sidebar-wrapper {
+        width: 50px;
+    }
+    #wrapper.toggled-2 #sidebar-wrapper:hover {
+        width: 250px;
+    }
+
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+        padding-left: 250px;
+    }
+    #wrapper.toggled-2 #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+        margin-left: -200px;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        width: auto;
+
+    }
+}
+
+div#wrapper {
+    padding-left: 65px;
+}
+
+
+#sidebar-wrapper{
+    display: none;
+}
+
+ul.nav.navbar-nav.mainmenu{
+    position: relative;
+    right: 10em;
+}
+
+div#sidebar-wrapper{
+   position: absolute;
+    top: 4em;
+    background-color: #0071BC;
+    background: linear-gradient(#0071BC, #8FBBD8);
+    /*height: 78.5%;*/
+}
+
+i.menus_icons{
+    color: white;
+}
+
+.sidebar-nav li a{
+    color: white;
+
+}
+/*.fixed {
+    position:fixed !important;
+             top:0 !important;
+         }*/
+
+
+
+
+/*---------------for modal------------------------------------         */
+.modal-content
+{
+    margin-top: 8% !important;
+}
+
+.body_modal{
+    padding:0 !important;
+}
+
+/*---------------------webtutorail1---------------------*/
+
+i.fa.fa-chevron-right{
+    float: right;
+    position: relative;
+    bottom: 17.7em;
+}
+
+
+i.fa.fa-chevron-left{
+    position: relative;
+    top: -2.2em;
+    left: 14px;
+}
+
+
+.utub_video{
+    width:400px;
+    height: 400px;
+}
+.slick-slide
+{
+width: 250px;
+}
+
+.slick-initialized .slick-slide{
+    position: relative;
+}
+.video_overlay{
+    position: absolute;
+    height: 220px;
+    width: 240px;
+    background-color: transparent;
+    /*opacity: .5;*/
+    color: black;
+    font-size: 2em;
+    text-align: center;
+}
+
+.video_overlay span{
+position: relative;
+top:3.5em;
+color: white;
+/*color:white;*/
+}
+.video_overlay img{
+    position: relative;
+    top: 40%;
+    /*left:19px;*/
+}
+
+table.webtutorial_tbl{
+    border:transparent;
+}
+
+/*li.webtutorial_file{
+    padding:0px;
+}*/
+
+.webtutorial_fotr{
+    margin-top: 23%;
+}
+
+/*.design1{
+    background-color: white !important;
+    color:black !important;
+}
+*/
+.webtutorial_design1{
+    position: relative;
+    top: 1em;
+     background-color: white;
+     border:none;
+    }
+
+    span.webtutorial_menus{
+        color: black;
+    }
+
+    #webtutorial_link{
+        display: none;
+    }
+
+   table.webtutorial_mdltbl{
+    border:none;
+   }
+
+   input.inputfile{
+    position: relative;
+    left: 5em;
+    top: 12px;
+   }
+
+   a.webtut_cancl{
+    color: #757373;
+    margin-right: 1.5em;
+   }
+
+   p.sub_title{
+    color: #757373;
+   }
+
+   a.upldvid{
+            color: #0071BC;
+            text-decoration: none;
+            margin-top: 8px;
+   }
+   a.upldvid:hover{
+    text-decoration: none;
+   }
+   p.head_web{
+    color:#757373;
+    font-size: 1.4em;
+    position: relative;
+    top: -2px;
+   }
+
+
+ /*-------------------webinar1------------------  */
+.uppr_box{
+        margin-left: 27%;
+        color: white;
+}
+
+p.uppr_con{
+    margin-left: 2em;
+}
+
+input.course_txt.web_input{
+    margin-left: 4em;
+ }
+
+.web_can{
+     border-bottom: 1px solid #DAD3D3;
+    margin: 0;
+}
+
+.usr_info{
+    margin: 1em;
+}
+
+a.usr_web{
+text-decoration: none;
+color: #0071BC;
+
+}
+p.web_topic{
+    font-weight: bold;
+    color:#989191;
+    font-size: 1.2em;
+}
+
+p.webinar_con{
+    text-align: justify;
+    margin-left:4px;
+    margin-right: 2em;
+    color: #908282;
+}
+.suggest_web{
+    margin-left: 2em;
+}
+
+p.dnt_web{
+    color: #908282;
+}
+
+
+
+/*----------------webinar2---------------------*/
+
+.web_box{
+    width: 22%;
+    /*padding: 4em;*/
+    margin:13px;
+}
+
+.utub_video1{
+    width: 260px;
+    height: 180px;
+}
+.video_overlayweb{
+    position: absolute;
+    height: 170px;
+    width: 256px;
+    background-color: transparent;
+    /*opacity: .5;*/
+    color: white;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+img.play_icon{
+        position: relative;
+    top: 3.1em;
+}
+
+span.utb_con{
+    position: relative;
+    top: 4em;
+}
+
+p.dnt_utub{
+    color:#968D8D;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+p.utb_content{
+    text-align: justify;
+    color:#A99F9F;
+}
+
+
+/*----------------webinar3------------------------*/
+
+button.join_btn{
+    /*background: #00bfa5;*/
+    margin-top: 54%;
+    padding: .3em 1.1em;
+}
+
+span.img_con{
+    position: relative;
+    left: 1.2em;
+}
+
+/*.video_overlaywebimag{
+    background-color: #0071BC;
+    opacity: .2;
+}*/
+
+
+/*--------------previousques1--------------------*/
+
+i.prevques_icon{
+        font-size: 1.5em;
+    color: #A0A0A0;
+    margin-top: 6px;
+}
+
+/*p.exam_prevdate{
+    margin-left: 3em;
+    margin-bottom: 1.6em;
+}
+
+.exam_ix{
+    margin-left: 2em;
+}
+*/
+.prevques_footr{
+    border-color: transparent;
+}
+
+.prevques_modl{
+    margin-top: 1.5em;
+}
+
+
+/*select.ix_exam{
+    position: relative;
+    right: 15em;
+}
+*/
+table.prev_tbl{
+    border-color: transparent;
+}
+
+i.upload_prv{
+    margin-right: 13px;
+}
+
+a.frmbx{
+    color: white;
+}
+
+a.frmbx:hover{
+    color: white;
+    text-decoration: none;
+}
+
+a.frmbx:focus{
+    color: white;
+    text-decoration: none;
+}
+
+/*td.examdate{
+    color:#463E3E;
+    font-weight: bold;
+}*/
+i.ey_icon{
+    margin-top: 4px;
+}
+
+label.exmdt{
+    width: 20%;
+}
+
+label.labls{
+    margin-left: 9px;
+}
+
+select#sel3{
+    margin-left: 2em;
+}
+
+select#sel4{
+    margin-left: 3em;
+}
+
+button.browse_butn{
+    margin-left: 7em;
+    margin-top: -3em;
+}
+
+p.selectfile{
+    font-weight: bold;
+    
+}
+/*------------------previousques2------------------------*/
+
+.prev_frmbx{
+    padding:4em 0px;
+     /*padding:0px;*/
+}
+
+button.prev_btn{
+    padding: 8px;
+    /*margin: 4em;*/
+}
+
+button.prev_view{
+    margin-left: 3em;
+    position: relative;
+    top: 2.5em;
+}
+
+button.prev_dwnld{
+    margin-right: 3em;
+     position: relative;
+    top: 2.5em;
+}
+
+
+/*--------------ett2admin-----------------------*/
+
+.exam_flbx{
+    margin-left: 13%;
+}
+
+.box_clr{
+    color: white;
+}
+
+i.plus_a{
+   color: #00bfa5;
+         position: relative;
+    top: -8px;
+    right: 1em;
+}
+span.add_mor{
+        position: relative;
+    /* top: 0px; */
+    right: 1.7em;
+    color: #AD9D9D;
+    font-weight: bold;
+}
+/*--------------------examtt4admin------------------------*/
+select#sel2{
+    position: relative;
+    margin-top: 1.2em;
+    border-bottom: 2px solid gainsboro;
+}
+.modal-dialog.examtt_modal{
+    margin-top: 5em;
+}
+
+.modal-footer.examtt_footer{
+    margin-top: 38%;
+}
+
+label.sem{
+    margin-left: 15px;
+}
+
+
+/*---------------exammtt_student and faculty---------------------------*/
+.modal-footer.modal_ft{
+    border-top-color: transparent;
+}
+
+p.internal
+{
+    font-weight: bold;
+    color: #A2A3A5;
+}
+
+/*--------------ViewAttend1------------------------*/
+table.view_tbl{
+    border: none;
+}
+
+a.view_atnd:hover{
+text-decoration: none;
+
+}
+
+a.view_atnd:focus{
+text-decoration: none;
+
+}
+
+
+/*--------------ViewAttend2---------------------*/
+
+span.view_p{
+    color: #827B7B;
+}
+
+table .view_table , td.view_line{
+border-right:1px solid #8E8989 !important;
+border-collapse: collapse !important;
+}
+
+
+/*-----------viewattend3-------------*/
+
+.prd{
+    position: relative;
+    top: 15px;
+}
+
+p.or{
+    margin-top: 10px;
+        text-align: center;
+        margin-left: 6em;
+            color: #B9AEAE;
+    font-weight: bold;
+}
+
+.view_dt{
+    position: relative;
+    left: 10em;
+}
+
+p.view_subj{
+    color: black;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-left: 2em;
+}
+
+th.view_line.view_yr{
+        border-bottom: 1px solid #8E8989;
+    border-left: 1px solid #8E8989;
+}
+
+th.view_line.view_submat{
+        text-align: center;
+    position: relative;
+    top: 2.5em;
+}
+
+.scrol_tbl{
+    overflow: scroll;
+    overflow-y: hidden;
+}

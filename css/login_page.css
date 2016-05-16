@@ -1,0 +1,306 @@
+/*body{
+	background: url('images/background.jpg');
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	}*/
+td.pull-left.id_pwd{
+	position: relative;
+	left: 2em;
+}
+
+.login_box{
+	margin-top: 5em;
+	/*opacity: .6;*/
+	padding: 0;
+	box-shadow:0px 0px 5px 3px #907D7D;
+	width: 48%;
+	
+
+}
+
+@font-face {
+        font-family:tregular;
+        src: url(font/Titillium-Regular.otf);
+}
+.tregular{
+    font-family:tregular;
+}
+.attrac{
+	color: white;
+	font-size: 2em;
+	font-weight: bold;
+	position: absolute;
+	top: 19%;
+	width:100%;
+
+
+}
+
+
+
+.design{
+	/*border: 1px solid black;*/
+	height: 3.2em;
+	background-color:#12A2E9;
+	border-color: none;
+	position: relative;
+	opacity: .8;
+	
+}
+
+.design1{
+	position: absolute;
+    top: 0;
+    width: 100%;
+}
+.logo{
+	    margin-left: 4em;
+    margin-top: 1em;
+    width: 6%;
+}
+
+.nav>li>a:hover{
+	/*border-bottom: 4px solid white;*/
+	
+	background-color: rgba(0, 0, 255, 0);
+
+}
+
+
+
+/*.nav>li>a:focus{
+
+border-bottom: 4px solid;
+	border-bottom-color: white;
+	background-color: rgba(0, 0, 255, 0);
+
+}*/
+
+.nav-pills>li+li {
+     margin-left: 0;
+     }
+
+     .navbar-nav>li{
+     	padding: 0px;
+
+     }
+
+     .navbar-nav {
+     	padding: 0;
+     }
+     .navbar-nav>li>a{
+
+     color: white;
+    position: relative;
+    top: -12px;}
+
+    span.menus{
+    	position: relative;
+    	top:4px;
+    }
+
+ 
+    /*-------------------last box---------------*/
+    .design2{
+	background-color: white;
+	height: 16em;
+	opacity: .6;
+	position: relative;
+
+}
+
+.design5{
+	    position: absolute;
+    top: 5em;
+    width: 92%;
+}
+
+.pg{
+	    position: relative;
+    top: 4em;
+}
+
+button.design3_cancel{
+margin-right: 1.5em;
+background-color: #DBD3D3 !important;
+color:#938C8C;
+}
+
+button.design3_cancel:hover{
+color: #908989;}
+
+td.forogt_pwd{
+	color: #00bfa5;
+	
+}
+a.forget{
+	color: #e73a59;
+}
+button.btn.btn-default.new_btn{
+	    background: #22aae2;
+   padding: 6px 1.3em;
+    font-size: 14px;
+    box-shadow:0px 0px 5px 1px #AB9E9E;
+	
+}
+
+button.btn.btn-default.cn_bt.pull-right{
+	 background: white;
+   padding: 6px 1em;
+    font-size: 14px;
+    color:grey;
+    margin-right: 1em;
+    box-shadow:0px 0px 5px 1px #AB9E9E;
+	
+}
+button .cn_bt{
+	background-color: white !important;
+}
+input.course_txt.trans_input{
+	background-color: transparent;
+	    border-bottom-color: #A9A4A4;
+	    font-weight: bold;
+}
+
+
+input.course_txt.trans_input:hover{
+ border-bottom-color: #22aae2;
+	    border-bottom-width: 3px;
+	}
+
+input.course_txt.trans_input:focus{
+ border-bottom-color: #22aae2;
+	    border-bottom-width: 3px;
+	}
+
+td.id_pwd{
+	color: #ACA2A2;
+}
+
+#facultylogin{
+	display: none;
+}
+
+/*a.prnt_list:hover{
+	width:10.4em;
+	color:red;
+}
+*/
+
+/*ul.nav.nav-pills.navbar-nav.red > li > a:focus{*/
+
+/*.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {*/
+    /*background-color: #FFFF00;*/
+  /*  color: red;
+    border-bottom-color: red;
+}*/
+#parentslogin{
+	display: none;
+}
+
+table a:not(.btn), .table a:not(.btn){
+	text-decoration: none;
+}
+
+
+/*------------Subscribe-------------------*/
+.img_sub{
+	padding: 0;
+}
+
+img.subscribe{
+	/*margin-top: 11em;*/
+    width: 87.5%;
+}
+
+.right_subs{
+margin-top: 3em;
+padding: 0;
+}
+
+.sub_tbl{
+	position: relative;
+    right: 5em;
+    margin-left: 2em;
+}
+
+p.sub_hd{
+  font-size: 3em;
+  color: white;
+  position: relative;
+    right: 1em;
+    top:18px;
+}
+
+p.sub_par{
+	font-size: 22px;
+	color: #1579a3;
+	position: relative;
+    right: 2em;
+    padding-bottom: 15px;
+}
+
+input.course_txt.trans_input_sub:hover{
+ border-bottom-color: white;
+	    border-bottom-width: 3px;
+
+	     -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+     background: transparent;
+    outline: none;    
+    font-size: 15px;
+	}
+
+input.course_txt.trans_input_sub:focus{
+ border-bottom-color: white;
+	    border-bottom-width: 3px;
+	    font-size: 15px;
+
+	     -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+     background: transparent;
+    outline: none;    
+	}
+
+input.course_txt.trans_input_sub{
+	background-color: transparent;
+	    border-bottom-color: white;
+	    font-weight: bold;
+	    color: white;
+	   position: relative;
+	   left: -8em;
+	   font-size: 15px;
+	   bottom: 12px;
+}
+
+td.sub_lbl{
+	color:#1579a3;
+
+}
+
+
+.sub_btns{
+position: relative;
+    right: 12.4em;
+   top:8px;
+}
+
+button.btn.btn-default.sub_bthbtm{
+	    background: #22aae2;
+   padding: 6px 1.3em;
+    font-size: 14px;
+    box-shadow:0px 1px 4px 0px #4A7171;
+    border-color:transparent;
+	
+}
+
+button.btn.btn-default.cn_bt.sub_cnbt{
+	border-color: transparent;
+	
+    box-shadow:0px 1px 4px 0px #4A7171 !important;
+	
+}

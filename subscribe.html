@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Subscribe Page</title>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="js/jquery2.js"></script> -->
+   
+    <link href="css/login_page.css" rel="stylesheet">
+    <link href="css/full.css" rel="stylesheet">
+    <link href="css/today.css" rel="stylesheet">
+</head>
+<body class="container-fluid tregular" style="padding: 0; background: -webkit-radial-gradient(top,#22a9e2,#42ACDA,#3DABDA);
+background: radial-gradient(at top,#22a9e2,#42ACDA,#3DABDA));">
+
+
+<!-- background-color: #20a6e0; -->
+
+<div class="col-md-12">&nbsp;</div>
+<div class="col-md-12">&nbsp;</div>
+<div class="col-md-12">&nbsp;</div>
+<div class="col-md-12">&nbsp;</div>
+<div class="col-md-12">&nbsp;</div>
+<div class="col-md-12">&nbsp;</div>
+<!-- <div class="col-md-12">&nbsp;</div> -->
+<div class="row col-md-12">
+
+
+<div class="col-md-6 img_sub">
+<img src="images/subscribe.png" class="subscribe">
+</div>
+
+
+<div class="col-md-6 right_subs">
+<p class="sub_hd">Enter details to subscribe </p>
+<p class="sub_par">Fill out the form below and we will contact you</p>
+
+
+  <div class="table-responsive sub_tbl">
+					         
+					         
+	         <table class="table table-condensed tbl font view_tbl">
+						<tbody class="tregular"> 	 	 	 		
+					  <tr>
+						<td class="pull-left sub_lbl">School name</td>
+						<td><input type="name" value="" class="course_txt trans_input_sub school_in" style="width:100%;" writeonly/></td>
+						
+					  </tr>
+					  
+                    									  
+					 
+					<tr>
+						<td class="pull-left sub_lbl">Person to contact</td>
+						<td><input type="txt" value="" class="course_txt trans_input_sub person_in" style="width:100%;" writeonly/></td>	   
+					</tr>
+
+					<tr>
+					<td class="pull-left sub_lbl">Phone number</td>
+					<td><input type="txt" value="" class="course_txt trans_input_sub phone_in" style="width:100%;" writeonly/></td>
+					</tr>
+
+					<tr>
+					<td class="pull-left sub_lbl">Email id</td>
+					<td><input type="email" value="" class="course_txt trans_input_sub email_in" style="width:100%;" writeonly/></td>
+					</tr>
+
+					<tr>
+					<td class="pull-left sub_lbl">Website URL</td>
+					<td><input type="email" value="" class="course_txt trans_input_sub website_in" style="width:100%;" writeonly/></td>
+					</tr>
+
+
+					</tbody>
+					
+				</table>
+								
+				
+</div>
+<div class="col-md-12 sub_btns">
+		 <button type="button" class="btn btn-default sub_bthbtm pull-right">SUBSCRIBE</button>
+
+		           <button type="button" class="btn btn-default cn_bt sub_cnbt pull-right">CANCEL</button>
+		    </div>			
+
+
+</div>
+
+
+
+
+<script>
+$(document).ready(function(){
+    $(".school_in").click(function(){
+             $(this).css("border-bottom", "4px solid white");
+             $(".person_in").css("border-bottom","2px solid white");
+             $(".website_in").css("border-bottom","2px solid white");
+             $(".phone_in").css("border-bottom","2px solid white");
+             $(".email_in").css("border-bottom","2px solid white");
+
+              
+    });
+    $(".person_in").click(function(){
+             $(this).css("border-bottom", "4px solid white");
+             $(".school_in").css("border-bottom","2px solid white");
+             $(".website_in").css("border-bottom","2px solid white");
+             $(".phone_in").css("border-bottom","2px solid white");
+             $(".email_in").css("border-bottom","2px solid white");
+
+              
+    });
+
+    $(".phone_in").click(function(){
+             $(this).css("border-bottom", "4px solid white");
+             $(".person_in").css("border-bottom","2px solid white");
+             $(".website_in").css("border-bottom","2px solid white");
+             $(".school_in").css("border-bottom","2px solid white");
+             $(".email_in").css("border-bottom","2px solid white");
+
+              
+    });
+
+     $(".email_in").click(function(){
+             $(this).css("border-bottom", "4px solid white");
+             $(".person_in").css("border-bottom","2px solid white");
+             $(".website_in").css("border-bottom","2px solid white");
+             $(".phone_in").css("border-bottom","2px solid white");
+             $(".school_in").css("border-bottom","2px solid white");
+	});
+
+      $(".website_in").click(function(){
+             $(this).css("border-bottom", "4px solid white");
+             $(".person_in").css("border-bottom","2px solid white");
+             $(".email_in").css("border-bottom","2px solid white");
+             $(".phone_in").css("border-bottom","2px solid white");
+             $(".school_in").css("border-bottom","2px solid white");
+	});
+
+              
+
+
+});
+</script>
+
+<script type="text/javascript">
+	
+$(document).click(function (e)
+{
+
+  var container = $(".school_in");
+
+   if (!container.is(e.target) && container.has(e.target).length === 0)
+  {
+ container.css("border-bottom", "2px solid white");
+
+   }
+
+
+  var container = $(".person_in");
+
+   if (!container.is(e.target) && container.has(e.target).length === 0)
+  {
+ container.css("border-bottom", "2px solid white");
+
+   }
+
+
+  var container = $(".phone_in");
+
+   if (!container.is(e.target) && container.has(e.target).length === 0)
+  {
+ container.css("border-bottom", "2px solid white");
+
+   }
+
+
+  var container = $(".email_in");
+
+   if (!container.is(e.target) && container.has(e.target).length === 0)
+  {
+ container.css("border-bottom", "2px solid white");
+
+   }
+
+
+  var container = $(".website_in");
+
+   if (!container.is(e.target) && container.has(e.target).length === 0)
+  {
+ container.css("border-bottom", "2px solid white");
+
+   }
+});
+
+</script>
+
+</div>
+
+</body>
+</html>
+
