@@ -1,38 +1,303 @@
 <!DOCTYPE html>
 <html>
+
 <head>
- <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <!-- <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="css/style_guide.css">
-<link rel="stylesheet" type="text/css" href="css/font_new_16.css">
- <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="css/font_new_16.css">
+          
+        <link rel="stylesheet" type="text/css" href="css/style_guide.css">
+
 </head>
+
 <body>
+    <div class="container">
+        <div class="col-md-12">&nbsp;</div>
+        <div class="col-md-12">&nbsp;</div>
+        <!-- for the BOX -->
+        <div class="col-md-12">
+            <div class="col-md-3">
+                <div style="height: 0; width: 0; position: absolute; visibility: hidden;" aria-hidden="true">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false">
+                        <symbol id="ripply-scott2" viewBox="0 0 100 100">
+                            <circle id="ripple-shape" cx="1" cy="1" r="1" />
+                        </symbol>
+                    </svg>
+                </div>
+                <div class="content">
+                    <!-- button component -->
+                    <button id="js-ripple-btn2" class="button form_box styl-material">
+                        IMPORT STUDENT
+                        <br> LIST
+                        <svg class="ripple-obj" id="js-ripple2">
+                            <use height="100" width="100" xlink:href="#ripply-scott2" class="js-ripple2"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- ----------end------------ -->
+        <!-- -------buttons--------- -->
+        <div class="col-md-12">&nbsp;</div>
+        <div class="col-md-12">&nbsp;</div>
+        <div style="height: 0; width: 0; position: absolute; visibility: hidden;" aria-hidden="true">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false">
+                <symbol id="ripply-scott" viewBox="0 0 100 100">
+                    <circle id="ripple-shape" cx="1" cy="1" r=".7" />
+                </symbol>
+                <symbol id="ripply-scott1" viewBox="0 0 100 100">
+                    <circle id="ripple-shape" cx="1" cy="1" r=".7" />
+                </symbol>
+            </svg>
+        </div>
+        <div class="content">
+            <!-- button component -->
+            <button id="js-ripple-btn" class="button styl-material">
+                LOGIN
+                <svg class="ripple-obj" id="js-ripple">
+                    <use height="100" width="100" xlink:href="#ripply-scott" class="js-ripple"></use>
+                </svg>
+            </button>
+            <button id="js-ripple-btn1" class="button styl-material can_but">
+                CANCEL
+                <svg class="ripple-obj1" id="js-ripple1">
+                    <use height="100" width="100" xlink:href="#ripply-scott1" class="js-ripple1"></use>
+                </svg>
+            </button>
+        </div>
+        <!-- --------end button----- -->
+        <!-- ------------TEXT FIELD foe two columns----------------- -->
+        <div class="col-md-12">&nbsp;</div>
+        <div class="col-md-12">&nbsp;</div>
+        <div class="col-md-12">
+            <div class="col-md-offset-1">&nbsp;</div>
+            <div class="col-md-4">
+                Text Field
+                <input value="" id="first_text" class="titillium_semibold" type="text">
+            </div>
+            <div class="col-md-4 col-md-offset-1 scnd_input">
+                Text Field
+                <input value="" id="first_text" class="titillium_semibold" type="text">
+            </div>
+            <div class="col-md-offset-1">&nbsp;</div>
+        </div>
+        <div class="col-md-12">&nbsp;</div>
+        <div class="col-md-12">
+            <div class="col-md-offset-1"></div>
+            <div class="col-md-10">
+                Text Field
+                <input value="" id="first_text" class="titillium_semibold" type="text">
+            </div>
+            <div class="col-md-offset-1"></div>
+        </div>
+        <div class="col-md-12">&nbsp;</div>
+        <div class="col-md-12">
+            <div class="col-md-offset-1"></div>
+            <div class="col-md-10">
+                Email
+                <input id="email" type="email" class="validate">
+                <label for="email" data-error="wrong" data-success="right"></label>
+            </div>
+            <div class="col-md-offset-1"></div>
+        </div>
+        <!-- -------end of textfield--------------- -->
+        <!-- ----------radio button------------ -->
+        <div class="col-md-12">&nbsp;</div>
+        <div class="col-md-12">&nbsp;</div>
+        <form action="#">
+            <p>
+                <input name="group1" type="radio" id="test1" />
+                <label for="test1">Red</label>
+            </p>
+            <p>
+                <input name="group1" type="radio" id="test2" />
+                <label for="test2">Yellow</label>
+            </p>
+            <p>
+                <input name="group1" type="radio" id="test3" />
+                <label for="test3">purple</label>
+            </p>
+            <p>
+                <input name="group1" type="radio" id="test4" />
+                <label for="test4">pink</label>
+            </p>
+        </form>
+        <!-- ----------end radio-buttons-------------- -->
+        <!-- checkboxex -->
+        <div class="col-md-12">&nbsp;</div>
+        <div class="col-md-12">&nbsp;</div>
+        <form action="#">
+            <p>
+                <input type="checkbox" class="filled-in" id="filled-in-box" />
+                <label for="filled-in-box">Filled</label>
+            </p>
+            <p>
+                <input type="checkbox" class="filled-in" id="filled-in-box1" />
+                <label for="filled-in-box1">Fille</label>
+            </p>
+            <p>
+                <input type="checkbox" class="filled-in" id="filled-in-box2" />
+                <label for="filled-in-box2">Fil</label>
+            </p>
+            <p>
+                <input type="checkbox" class="filled-in" id="filled-in-box3" />
+                <label for="filled-in-box3">F</label>
+            </p>
+        </form>
+        <!-- -------end checkbox------ -->
+        <!-- --------------------DROPDOWN box---------------- -->
+        <div class="col-md-12">&nbsp;</div>
+        <div class="col-md-12">&nbsp;</div>
+        <div class="col-md-12">
+            <div class="col-md-offset-2"></div>
+            <div class="input-field col-md-4">
+                <select>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+                <!-- <label>Materialize Select</label> -->
+            </div>
+            <div class="input-field col-md-4">
+                <select>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+                <!-- <label>Materialize Select</label> -->
+            </div>
+            <div class="col-md-offset-2"></div>
+        </div>
+        <div class="col-md-12">
+            <div class="col-md-offset-2"></div>
+            <div class="input-field col-md-8">
+                <select>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+                <!-- <label>Materialize Select</label> -->
+            </div>
+            <div class="col-md-offset-2"></div>
+        </div>
+        <script type="text/javascript">
+        $(document).ready(function() {
+            $('select').material_select();
+        });
+        </script>
+        <div class="col-md-12">&nbsp;</div>
+        <div class="col-md-12">&nbsp;</div>
+        <div class="col-md-12">&nbsp;</div>
+        <div class="col-md-12">&nbsp;</div>
+        <div class="col-md-12">&nbsp;</div>
+        <div class="col-md-12">&nbsp;</div>
+        <!-- ----------------NAV--------- -->
+        <div class="col-md-12">&nbsp;</div>
+        <div class="col-md-12">&nbsp;</div>
+        <div class="row">
+            <div class="col col-md-6">
+                <ul class="tabs ">
+                    <li class="tab col-md-3"><a class="active" href="#test1">Tab 1</a></li>
+                    <li class="tab col-md-3"><a href="#test2">Tab 2</a></li>
+                    <li class="tab col-md-3"><a href="#test1">Tab 3</a></li>
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript">
+        $(document).ready(function() {
+            $('ul.tabs').tabs();
+        });
 
-<div class="col-md-12">
-<div class="col-md-3 form-box">
- <p>s</p>  
+        $(document).ready(function() {
+            $('ul.tabs').tabs('select_tab', 'tab_id');
+        });
+        </script>
+        <!-- ------------end NAV---------- -->
+        <div class="col-md-12">&nbsp;</div>
+        <div class="col-md-12">&nbsp;</div>
+
+
+      
+
+
+        <!-- -----------------------------DATE piCker--------------- -->
+
+        <div class="row">
+        <div class="col-md-6">
+        <input type="date" class="datepicker">
+
+    <script type="text/javascript">
+           $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  });
+
+    </script>
+   </div>
+  </div>
+
+
+    <!-- ----------------------ENd datepicker------------------- -->
+
+      <!-- -------Progress bar-------- -->
+
+        <div class="col-md-12">&nbsp;</div>
+        <div class="col-md-12">&nbsp;</div>
+        <div class="row">
+        <div class="col-md-6">
+        <form action="#">
+            <div class="file-field input-field">
+                <div class="d">
+                    <span><img src="images/upld.png" onclick="performClick('theFile');"></span>
+                    <input type="file" id="theFile">
+                </div>
+                <div class="file-path-wrapper">
+                    <input class="file-path validate progress_text" type="text">
+                    <div class="progress">
+      <div class="determinate" style="width: 0%"></div>
+  </div>
+                </div>
+            </div>
 </div>
-
-
 </div>
+        </form>
 
-<div class="buttonse">
-<a href="#" class="buttons buttons_ok titillium_reg">DETAIN</a>
-
-<a href="#" class="buttons buttons_can titillium_reg">CANCEL</a>
-
-</div>
-
-
-<div class="txtfield">
-Text : <input type="text" id="input_txt" class="titillium_semibold">
-
-</div>
-
+        <script type="text/javascript">
+function performClick(elemId) {
+   var elem = document.getElementById(elemId);
+   if(elem && document.createEvent) {
+      var evt = document.createEvent("MouseEvents");
+      evt.initEvent("click", true, false);
+      elem.dispatchEvent(evt);
+   }
+}
+</script>
 
 
-
+<!-- -----end prohress bar----- -->
+        <!-- for buttons -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+        <script src="js/ripple-config.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <!-- ----- -->
+    </div>
 </body>
+
 </html>

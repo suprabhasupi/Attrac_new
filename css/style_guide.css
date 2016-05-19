@@ -1,90 +1,263 @@
 
-
+.container{
+	width: 100% !important;
+}
 
 
 /*------------- BUTTONS -----------------*/
 
-.buttons {
-    border: 2px solid none;
-    padding: 16px 32px;
-    width: 115px;
-    height: 48px;
-    border-radius: 10px;
-    font-size: 16px;
-    color:white;
-    
-	text-decoration:none;
-	/*border-color: transparent;*/
-	box-shadow:0px 0px 3px 1px #C7C4C4;
-	
-
-position: relative;
-top: 5em;
+button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: none;
+	box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.3), 0 3px 3px rgba(0, 0, 0, 0.15), 0 3px 2px -2px rgba(0, 0, 0, 0.2);
+	color: white;
+	font-size: 16px;
+	text-shadow: 0 -0.5px 1px rgba(0, 0, 0, 0.15);
 }
 
-
-.buttons_ok{
-	background-color:#22aae2;
-}
-
-.buttons_ok:hover{
-	background-color:#6dc5ea;
-	text-decoration:none;
+.button {
+	padding: 8px 16px;
+	border: 2px solid none;
+	border-radius: 5px;
+	margin: 0;
+	position: relative;
+	display: inline-block;
 	color: white;
 }
 
-.buttons_ok:focus{
-	background-color:#6dc5ea;
-	text-decoration:none;
-	color: white;
+.button.styl-material {
+	-webkit-transition: 200ms background cubic-bezier(0.4, 0, 0.2, 1);
+	transition: 200ms background cubic-bezier(0.5, 0, 0.4, 1);
+	background: #20a5e0;
 }
 
-.buttons_can{
-	
-    background-color:#666666;
+.button.styl-material:focus {
+	outline: none;
+	background: #20a5e0;
 }
 
-.buttons_can:hover{
-	
-    background-color:#989a9b;
-    text-decoration:none;
-    color: white;
+
+.button.styl-material:hover{
+	background-color: #1fa3da;
 }
 
-.buttons_can:focus{
-	
-    background-color:#989a9b;
-    text-decoration:none;
-    color: white;
+.ripple-obj{
+	height: 100%;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	width: 100%;
+	fill: #1c9cd1;
+}
+.ripple-obj1{
+	height: 100%;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	width: 100%;
+	fill: #7c7d7d;
 }
 
+button.can_but{
+	background-color: #666666 !important;
+}
 
 
 /*--------------------form-box------------------*/
 
-.form-box{
+button.form_box{
 box-shadow:0px 0px 5px 3px #c7bfbf;
 background-color:#22aae2;
-width: 256px;
-height: 146px;
+width: 254px;
+height: 148px;
+border-radius: 0px;
 }
 
-
+p.box_contnt{
+	color: white;
+	font-size: 15px;
+	margin-top: 3.5em;
+}
 
 
 
 
 /*---------input text-----------*/
-#input_txt{
-	position: relative;
-	left: 24px;
-	color: black;
-	border-right-color: transparent;
-	border-left-color: transparent;
-	border-top-color: transparent;
-	background-color: transparent;
-	outline: none;  
-	padding-left: 8px;
-	font-size: 16px;
+input#first_text{
+    position: absolute;
+    padding-left: 8px;
+    margin-left: 24px;
+    border-bottom-color: #666;
+}
 
+input#first_text:hover{
+	border-bottom: 2px solid #666; 
+}
+
+
+.scnd_input{
+	margin-left: 9.5em;
+}
+
+input#email{
+	   
+    position: absolute;
+    padding-left: 8px;
+    margin-left: 24px;
+    border-bottom-color: #666;
+}
+
+input#email:hover{
+	border-bottom: 2px solid #666; 
+}
+
+input#email:focus{
+	border-bottom: 2px solid #666; 
+}
+
+input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea{
+	height: 1.1em;
+}
+input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]){
+    box-shadow: 0 0 0 0 #ECEFEE;
+    border-bottom: 2px solid #666; 
+}
+/*-----------nav---------*/
+
+
+
+.login_box{
+	margin-top: 5em;
+	/*opacity: .6;*/
+	padding: 0;
+	box-shadow:0px 0px 5px 3px #907D7D;
+	width: 48%;
+}
+
+
+.design{
+	
+	height: 3.2em;
+	background-color:#12A2E9;
+	border-color: none;
+	position: relative;
+	opacity: .8;
+	
+}
+
+.design1{
+	position: absolute;
+    top: 0;
+    width: 100%;
+}
+.logo{
+	    margin-left: 4em;
+    margin-top: 1em;
+    width: 6%;
+}
+
+.nav>li>a:hover{
+	/*border-bottom: 4px solid white;*/
+	
+	background-color: rgba(0, 0, 255, 0);
+
+}
+.nav-pills>li+li {
+     margin-left: 0;
+     }
+
+     .navbar-nav>li{
+     	padding: 0px;
+
+     }
+
+     .navbar-nav {
+     	padding: 0;
+     }
+     .navbar-nav>li>a{
+
+     color: white;
+    position: relative;
+    top: -12px;}
+
+    span.menus{
+    	position: relative;
+    	top:4px;
+    }
+   
+.pg{
+	    position: relative;
+    top: 4em;
+}
+
+#facultylogin{
+	display: none;
+}
+
+#parentslogin{
+	display: none;
+}
+
+/*-------------NAV tabs-----------*/
+
+.tabs{
+	box-shadow:0px 0px 5px 3px #c7bfbf;
+
+}
+
+li.tabs a{
+	text-decoration: none;
+}
+
+
+/*---------Drop Down---------------*/
+
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 0px;
+    vertical-align: middle;
+    border-top: 0px dashed;
+    border-right: 0px solid transparent;
+    border-left: 0px solid transparent;
+}
+
+.select-wrapper span.caret{
+	/*position: relative;*/
+	top:15px;
+}
+
+
+
+/*--------------Progress bar-----------------*/
+
+.progress{
+	position: relative;top:-1.6em;
+}
+
+.d{
+	position: relative;
+}
+
+.d span{
+	position: absolute;
+	right: 0;
+	top:-1.3em;
+}
+
+input.file-path.validate.progress_text:focus{
+	border-bottom-color: transparent;
+}
+
+/*----------------checkbox-------------*/
+
+[type="checkbox"].filled-in+label:before, [type="checkbox"].filled-in+label:after{
+	z-index: 0;
 }
