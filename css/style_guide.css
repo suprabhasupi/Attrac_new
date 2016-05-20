@@ -272,11 +272,26 @@ input.file-path.validate.progress_text:focus{
     font-size: 3.5rem;
     font-weight: 400;
 }
+
 .picker__month-display {
     text-transform: uppercase;
     font-size: 1.6rem;
 }
+
 .picker__year-display {
     font-size: 1.6rem;
     color: rgba(255, 255, 255, 0.4);
+}
+.picker__day.picker__day--infocus {
+    width: 30px;
+    height: 27px;
+    margin: 0 auto;
+}
+
+/*for date picker postion*/
+@media (min-height: 38.875em){
+.picker--opened .picker__frame {
+    top: 15%;
+    bottom: auto;
+}
 }
