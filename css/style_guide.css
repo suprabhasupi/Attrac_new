@@ -261,3 +261,22 @@ input.file-path.validate.progress_text:focus{
 [type="checkbox"].filled-in+label:before, [type="checkbox"].filled-in+label:after{
 	z-index: 0;
 }
+
+
+/*-----------------date-picker----------------------*/
+
+.picker tr {
+    line-height: .3;
+}
+.picker__day-display {
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+.picker__month-display {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+.picker__year-display {
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.4);
+}
