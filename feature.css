@@ -1,29 +1,163 @@
 
-
-/*first page*/
-
-.feature_page{
-	background-image: url(images/features/bg1_1.jpg);
-	height: 592px;
+body{
+	overflow-x: hidden;
 }
 
-.hedr{
-	margin-top: 10em;
+
+/*-------------------------first page------------------------*/
+
+.feature_page {
+    background-image: url(images/features/bg1_1.jpg);
+    /*height: 592px;*/
+    background-size: 1351px 525px;
+    background-repeat: no-repeat;
 }
 
-span.atndnc{
-	font-size: 36px;
+.hedr {
+    margin-top: 10em;
 }
-.frst_pg{
-position: relative;
-    left: 5.8em;
-    top: -1.5em;
+
+span.atndnc,
+span.fdbck {
+    font-size: 36px;
     color: white;
 }
 
-.frst_para{
-font-size: 22px;
-position: relative;
+.frst_pg {
+    position: relative;
+    right: 2.6em;
+    top: -1.3em;
+    color: white;
+}
+
+.frst_para {
+    font-size: 22px;
+    position: relative;
     left: 5.8em;
     top: -2.3em;
+}
+
+
+/*---------------------------second row--------------------------------------*/
+
+.secnd_row,
+.fourth_row,
+.sixth_row, .eighth_row {
+    margin-top: 118px;
+    position: relative;
+    left: 9em;
+}
+
+span.marks_memo,
+span.hostl_managmnt,
+span.webinar {
+    position: relative;
+    top: -19px;
+    left: 8px;
+    font-size: 30px;
+}
+
+p.scnd_para {
+    position: relative;
+    top: -3em;
+    left: 6em;
+    font-size: 16px;
+}
+
+.second_mac {
+    position: relative;
+    left: -1em;
+}
+
+
+/*-----------------------third row------------------------------------------*/
+
+.third_row {
+    background-image: url(images/features/bg2_1.png);
+    height: 445px;
+    background-size: 1350px 438px;
+    background-repeat: no-repeat;
+}
+
+.thrd_row_right {
+    margin-top: 166px;
+    position: relative;
+    left: -1.5em;
+}
+
+p.third_para {
+    position: relative;
+    top: -2.1em;
+    left: 6em;
+    color: white;
+}
+
+span.fdbck {
+    position: relative;
+    top: -13px;
+    left: 3px;
+}
+
+
+/*---------------------------Fourth row--------------------------------------------*/
+
+p.fourth_para {
+    position: relative;
+    top: -3em;
+    left: 6.8em;
+    font-size: 16px;
+}
+
+
+/*----------------------------Fifth Row----------------------------------------------*/
+
+.fifth_row {
+    background-image: url(images/features/bg3.jpg);
+    height: 445px;
+    background-size: 1350px 438px;
+    background-repeat: no-repeat;
+}
+
+.fifth_row_right {
+    margin-top: 147px;
+    position: relative;
+    left: -1.5em;
+}
+
+p.fifth_para {
+    position: relative;
+    top: -2.3em;
+    left: 7em;
+    color: white;
+}
+
+
+/*-----------------------------------Sixth row----------------------------------------------*/
+
+p.sixth_para {
+    position: relative;
+    top: -2.6em;
+    left: 6.5em;
+    font-size: 16px;
+}
+
+
+.sixth_mac{
+	position: relative;
+    left: 8em;
+}
+
+/*---------------------Seventh_row-----------------------------------------*/
+.seventh_row{
+	 background-image: url(images/features/bg4.png);
+    height: 445px;
+    background-size: 1350px 438px;
+    background-repeat: no-repeat;
+}
+
+
+/*----------------------------------eighth row----------------------------*/
+
+.eighth_row{
+
 }

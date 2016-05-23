@@ -264,34 +264,51 @@ input.file-path.validate.progress_text:focus{
 
 
 /*-----------------date-picker----------------------*/
-/*
-.picker tr {
-    line-height: .3;
-}
-.picker__day-display {
-    font-size: 3.5rem;
-    font-weight: 400;
+.bootstrap-datetimepicker-widget table td.today:before {
+border-bottom-color: #22aae2;
+	}
+
+.bootstrap-datetimepicker-widget table td.active,
+.bootstrap-datetimepicker-widget table td.active:hover{
+	background-color: #22aae2;
 }
 
-.picker__month-display {
-    text-transform: uppercase;
-    font-size: 1.6rem;
+.bootstrap-datetimepicker-widget table td span.active {
+background-color: #22aae2;
 }
 
-.picker__year-display {
-    font-size: 1.6rem;
-    color: rgba(255, 255, 255, 0.4);
+.bootstrap-datetimepicker-widget.dropdown-menu{
+ 	width: 65%;
+ }
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+  .bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs {
+   display: none;
+  }
 }
-.picker__day.picker__day--infocus {
-    width: 30px;
-    height: 30px;
-    margin: 0 auto;
+@media (min-width: 992px) {
+  .bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs {
+   display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs {
+   display: none;
+  }
 }
 
-/*for date picker postion*/
-@media (min-height: 38.875em){
-.picker--opened .picker__frame {
-    top: 15%;
-    bottom: auto;
+
+.datepicker-days {
+    padding: 15px;
 }
-}*/
+
+.bootstrap-datetimepicker-widget table td.day{
+	padding:10px 10px;
+}
+

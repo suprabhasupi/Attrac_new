@@ -2,30 +2,24 @@
 <html>
 
 <head>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
-    <!--Import materialize.css-->
+    
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <link rel="stylesheet" type="text/css" href="css/font.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/materialize.css">
-    <link rel="stylesheet" type="text/css" href="css/font_new_16.css">
-     <script src="js/moment.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/font_new_16.css">    
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" type="text/css" href="css/style_guide.css">
 
-          <script src="js/bootstrap-datetimepicker.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.css">
-        <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
-        <link rel="stylesheet" type="text/css" href="css/style_guide.css">
-       
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.js"></script>
 
 </head>
 
@@ -237,88 +231,74 @@
         <!-- ------------end NAV---------- -->
         <div class="col-md-12">&nbsp;</div>
         <div class="col-md-12">&nbsp;</div>
-
-
-      
-
-
         <!-- -----------------------------DATE piCker--------------- -->
-
-      <!--   <div class="row">
-        <div class="col-md-6">
-        <input type="date" class="datepicker">
-
-    <script type="text/javascript">
-           $('.datepicker').pickadate({
-    selectMonths: true, // Creates a dropdown to control month
-    selectYears: 15 // Creates a dropdown of 15 years to control year
-  });
-
-    </script>
-   </div>
-  </div>
- -->
-
- <div class="container">
-    <div class="col-sm-6" style="height:130px;">
-        <div class="form-group">
-            <div class='input-group date' id='datetimepicker9'>
-                <input type='text' class="form-control" />
-                <span class="input-group-addon">
-                    <span class="glyphicon glyphicon-calendar">
+        <div class="col-sm-6" style="height:130px;">
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker8'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                    <span class="fa fa-calendar">
                     </span>
-                </span>
+                    </span>
+                </div>
             </div>
         </div>
-    </div>
-    <script type="text/javascript">
-        $(function () {
-            $('#datetimepicker9').datetimepicker({
-                viewMode: 'years'
+        <script type="text/javascript">
+        $(function() {
+            $('#datetimepicker8').datetimepicker({
+                icons: {
+                    // time: "fa fa-clock-o",
+                    date: "fa fa-calendar",
+                    up: "fa fa-arrow-up",
+                    down: "fa fa-arrow-down"
+                },
+                format: 'DD/MM/YYYY',
+
+                 widgetPositioning: {
+            horizontal: 'right',
+            vertical: 'bottom'
+        }
             });
         });
-    </script>
-</div>
-
-
-    <!-- ----------------------ENd datepicker------------------- -->
-
-      <!-- -------Progress bar-------- -->
-
+        </script>
+        <!-- ----------------------ENd datepicker------------------- -->
+        <!-- -------Progress bar-------- -->
+        <div class="col-md-12">&nbsp;</div>
         <div class="col-md-12">&nbsp;</div>
         <div class="col-md-12">&nbsp;</div>
         <div class="row">
-        <div class="col-md-6">
-        <form action="#">
-            <div class="file-field input-field">
-                <div class="d">
-                    <span><img src="images/upld.png" onclick="performClick('theFile');"></span>
-                    <input type="file" id="theFile">
-                </div>
-                <div class="file-path-wrapper">
-                    <input class="file-path validate progress_text" type="text">
-                    <div class="progress">
-      <div class="determinate" style="width: 0%"></div>
-  </div>
-                </div>
+            <div class="col-md-6">
+                <form action="#">
+                    <div class="file-field input-field">
+                        <div class="d">
+                            <span><img src="images/upld.png" onclick="performClick('theFile');"></span>
+                            <input type="file" id="theFile">
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate progress_text" type="text">
+                            <div class="progress">
+                                <div class="determinate" style="width: 0%"></div>
+                                <div class="col-md-12">&nbsp;</div>
+                                <div class="col-md-12">&nbsp;</div>
+                                <div class="col-md-12">&nbsp;</div>
+                                <div class="col-md-12">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
             </div>
-</div>
-</div>
+        </div>
         </form>
-
         <script type="text/javascript">
-function performClick(elemId) {
-   var elem = document.getElementById(elemId);
-   if(elem && document.createEvent) {
-      var evt = document.createEvent("MouseEvents");
-      evt.initEvent("click", true, false);
-      elem.dispatchEvent(evt);
-   }
-}
-</script>
-
-
-<!-- -----end prohress bar----- -->
+        function performClick(elemId) {
+            var elem = document.getElementById(elemId);
+            if (elem && document.createEvent) {
+                var evt = document.createEvent("MouseEvents");
+                evt.initEvent("click", true, false);
+                elem.dispatchEvent(evt);
+            }
+        }
+        </script>
+        <!-- -----end prohress bar----- -->
         <!-- for buttons -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
         <script src="js/ripple-config.js"></script>
