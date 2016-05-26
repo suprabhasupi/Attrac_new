@@ -14,14 +14,19 @@
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="js/jquery2.js"></script>
+    <script type="text/javascript" src="js/highlight.pack.js"></script>
+    <script type="text/javascript" src="js/modernizr.custom.min.js" ></script>
+    <script type="text/javascript" src="js/ScrollMagic.js"></script>
+    <script type="text/javascript" src="js/debug.addIndicators.js"></script>
+
     <link rel="stylesheet" type="text/css" href="feature.css">
 </head>
 
 <body>
     <div class="container col-md-12 col-sm-12 col-xs-12">
         <div class="row">
-            <div class=" col-md-12 col-sm-12 col-xs-12 feature_page">
-                <!-- <img src="images/children.jpg"> -->
+            <div class=" col-md-12 col-sm-12 col-xs-12 feature_page panel" id="parallax1">
+                <div class="prlx1">
                 <div class="col-md-12 col-sm-12 col-xs-12">&nbsp;</div>
                 <div class="col-md-12 col-sm-12 col-xs-12">&nbsp;</div>
                 <div class="col-md-12 col-sm-12 col-xs-12">&nbsp;</div>
@@ -36,9 +41,10 @@
                         <br> store records and access them anytime
                         <br> Prevent tampering of loss of data </p>
                 </div>
+                </div>
             </div>
             <!-- --------------------second row--------------------- -->
-            <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="col-md-12 col-sm-12 col-xs-12 panel" id="parallax1">
                 <div class="col-md-5 col-sm-12 col-xs-12 secnd_row">
                     <img src="images/features/notepad2.png">
                     <span class="marks_memo tregular">Marks Memo </span>
@@ -53,7 +59,7 @@
                 </div>
             </div>
             <!-- ---------------------third row---------------------------------- -->
-            <div class="col-md-12 col-sm-12 col-xs-12 third_row">
+            <div class="col-md-12 col-sm-12 col-xs-12 third_row panel" id="parallax2">
                 <div class="col-md-6 col-sm-6 col-xs-6">
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-6 thrd_row_right">
@@ -65,7 +71,7 @@
                 </div>
             </div>
             <!-- -------------------Fourth row--------------------- -->
-            <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="col-md-12 col-sm-12 col-xs-12 panel">
                 <div class="col-md-5 col-sm-12 col-xs-12 fourth_row">
                     <img src="images/features/bed.png">
                     <span class="hostl_managmnt tregular">Hostel Management </span>
@@ -78,7 +84,7 @@
                 </div>
             </div>
             <!-- -----------------------------Fifth row----------------------------- -->
-            <div class="col-md-12 col-sm-12 col-xs-12 fifth_row">
+            <div class="col-md-12 col-sm-12 col-xs-12 fifth_row" id="parallax3">
                 <div class="col-md-6 col-sm-6 col-xs-6">
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-6 fifth_row_right">
@@ -128,6 +134,102 @@
                 </div>
             </div>
             <!-- ---------------------------------Footer------------------------------- -->
+            <div class="col-md-12 col-sm-12 col-xs-12 last_ftr">
+
+            <div class="row ftr_bx tregular">
+            <div class="col-md-3 col-sm-3 col-xs-12 fotr_bx1">
+            <img src="images/features/ftr1_icon.png" class="fotr_icn1">
+            <p class="fotr_cont1 ftr_cont">Individual logins </p>
+            </div>
+
+            <div class="col-md-3 col-sm-3 col-xs-12 fotr_bx2">
+            <img src="images/features/ftr2_icon.png"  class="fotr_icn2">
+            <p class="fotr_cont2 ftr_cont">Time tables </p>
+            </div>
+
+            <div class="col-md-3 col-sm-3 col-xs-12"> 
+            <img src="images/features/ftr3_icon.png" class="fotr_icn3">
+            <p class="fotr_cont3 ftr_cont">Raeading Material </p>
+            </div>
+
+            <div class="col-md-3 col-sm-3 col-xs-12">
+                <img src="images/features/ftr4_icon.png" class="fotr_icn4">
+            <p class="fotr_cont4 ftr_cont">Online exams <br> and seminars </p>
+            </div>
+</div>
+
+   <div class="row ftr_bx tregular">
+            <div class="col-md-3 col-sm-3 col-xs-12 fotr_bx1">
+            <img src="images/features/ftr5_icon.png" class="fotr_icn5">
+            <p class="fotr_cont5 ftr_cont">Placement <br>assistance </p>
+            </div>
+
+            <div class="col-md-3 col-sm-3 col-xs-12 fotr_bx2">
+            <img src="images/features/ftr6_icon.png"  class="fotr_icn6">
+            <p class="fotr_cont6 ftr_cont">Sms/E-mail alerts </p>
+            </div>
+
+            <div class="col-md-3 col-sm-3 col-xs-12"> 
+            <img src="images/features/ftr7_icon.png" class="fotr_icn7">
+            <p class="fotr_cont7 ftr_cont">Alumni services </p>
+            </div>
+
+            <div class="col-md-3 col-sm-3 col-xs-12">
+               
+            </div>
+</div>
+
+
+
+            </div>
+<!-- 
+            <script>
+                        $(function () { // wait for document ready
+                            // init
+                            var controller = new ScrollMagic.Controller({
+                                globalSceneOptions: {
+                                    triggerHook: 'onLeave'
+                                }
+                            });
+
+                            // get all slides
+                            var slides = document.querySelectorAll(".panel");
+
+                            // create scene for every slide
+                            for (var i=0; i<slides.length; i++) {
+                                new ScrollMagic.Scene({
+                                        triggerElement: slides[i]
+                                    })
+                                    .setPin(slides[i])
+                                    .addIndicators() // add indicators (requires plugin)
+                                    .addTo(controller);
+                            }
+                        });
+                    </script>
+
+ -->
+
+ <script>
+                        // init controller
+                        var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
+
+                        // build scenes
+                        new ScrollMagic.Scene({triggerElement: "#parallax1"})
+                                        .setTween("#parallax1 > div", {y: "30%", ease: Linear.easeNone})
+                                        .addIndicators()
+                                        .addTo(controller);
+
+                        new ScrollMagic.Scene({triggerElement: "#parallax2"})
+                                        .setTween("#parallax2 > div", {y: "30%", ease: Linear.easeNone})
+                                        .addIndicators()
+                                        .addTo(controller);
+
+                        new ScrollMagic.Scene({triggerElement: "#parallax3"})
+                                        .setTween("#parallax3 > div", {y: "80%", ease: Linear.easeNone})
+                                        .addIndicators()
+                                        .addTo(controller);
+                    </script>
+
         </div>
     </div>
 </body>
