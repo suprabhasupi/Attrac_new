@@ -13,10 +13,12 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="js/jquery2.js"></script>
+    <!-- <script type="text/javascript" src="js/jquery2.js"></script> -->
+    <script type="text/javascript" src="js/TweenMax.min.js"></script>
     <script type="text/javascript" src="js/highlight.pack.js"></script>
     <script type="text/javascript" src="js/modernizr.custom.min.js" ></script>
     <script type="text/javascript" src="js/ScrollMagic.js"></script>
+    <script type="text/javascript" src="js/animation.gsap.js"></script>
     <script type="text/javascript" src="js/debug.addIndicators.js"></script>
 
     <link rel="stylesheet" type="text/css" href="feature.css">
@@ -25,6 +27,7 @@
 <body>
     <div class="container col-md-12 col-sm-12 col-xs-12">
         <div class="row">
+            
             <div class=" col-md-12 col-sm-12 col-xs-12 feature_page panel" id="parallax1">
                 <div class="prlx1">
                 <div class="col-md-12 col-sm-12 col-xs-12">&nbsp;</div>
@@ -43,8 +46,9 @@
                 </div>
                 </div>
             </div>
+
             <!-- --------------------second row--------------------- -->
-            <div class="col-md-12 col-sm-12 col-xs-12 panel" id="parallax1">
+            <div class="col-md-12 col-sm-12 col-xs-12 panel">
                 <div class="col-md-5 col-sm-12 col-xs-12 secnd_row">
                     <img src="images/features/notepad2.png">
                     <span class="marks_memo tregular">Marks Memo </span>
@@ -182,7 +186,7 @@
 
 
             </div>
-<!-- 
+
             <script>
                         $(function () { // wait for document ready
                             // init
@@ -200,22 +204,22 @@
                                 new ScrollMagic.Scene({
                                         triggerElement: slides[i]
                                     })
-                                    .setPin(slides[i])
+                                    // .setPin(slides[i])
                                     .addIndicators() // add indicators (requires plugin)
                                     .addTo(controller);
                             }
                         });
                     </script>
 
- -->
 
+<!-- 
  <script>
                         // init controller
                         var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
 
                         // build scenes
                         new ScrollMagic.Scene({triggerElement: "#parallax1"})
-                                        .setTween("#parallax1 > div", {y: "30%", ease: Linear.easeNone})
+                                        .setTween(".prlx1", {y: "30%", ease: Linear.easeNone})
                                         .addIndicators()
                                         .addTo(controller);
 
@@ -228,7 +232,7 @@
                                         .setTween("#parallax3 > div", {y: "80%", ease: Linear.easeNone})
                                         .addIndicators()
                                         .addTo(controller);
-                    </script>
+                    </script> -->
 
         </div>
     </div>
