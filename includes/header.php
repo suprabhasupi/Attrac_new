@@ -1,48 +1,56 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/secugen_template.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<!-- <meta name="description" content=""> -->
-    <!-- <meta name="author" content=""> -->
-
- <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-    <link rel="stylesheet" type="text/css" href="css/font.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<meta name="description" content="">
+    <meta name="author" content="">
+    
+<!-- new css  
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css"> 
     <link rel="stylesheet" type="text/css" href="css/materialize.css">
     <link rel="stylesheet" type="text/css" href="css/font_new_16.css">    
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.css">
-    <link rel="stylesheet" type="text/css" href="css/style_guide.css">
-     <link rel="stylesheet" type="text/css" href="css/star-rating-svg.css">
+   <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.css"> 
+  <link rel="stylesheet" type="text/css" href="css/style_guide_faculty.css"> -->
+
+
+    
+<link href="css/bootstrap.min.css" rel="stylesheet">
+ <link rel="stylesheet" type="text/css" href="css/star-rating-svg.css">
+<link rel="stylesheet" href="css/p1.css" />
+<link rel="stylesheet" href="css/p2.css" />
+<link rel="stylesheet" href="css/p3.css" />
 <link rel="stylesheet" href="css/full.css" />
 <link href="css/login_page.css" rel="stylesheet">
-<link rel="stylesheet" href="css/new_css.css" />
-
+    
 <link rel="stylesheet" href="css/today.css" />
 <link rel="stylesheet" href="css/font.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+<script src="js/jquery.min.js"> </script>
 <link href="css/simple-sidebar.css" rel="stylesheet">
-<link href="font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<!--<link href="font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet">-->
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="js/jquery.min.js"></script>
+<script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-    <script src="js/moment.min.js"></script>
-    <script src="js/bootstrap-datetimepicker.js"></script>
-    <script src="js/jquery-1.11.2.min.js"></script>
-     <script src="js/sidebar_menu.js"></script>
+    <script src="js/sidebar_menu.js"></script>
 <script type="text/javascript" src="http://gmeme/jsc/jquery.scrollTo-min.js"></script>
+<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+<!-- <script src="js/jqFancyTransitions.1.8.min.js" type="text/javascript"></script>  -->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
 <script src="js/jquery.easyui.min.js"> </script>
 <script src="js/jquery.star-rating-svg.js"></script>
 
 
+<!-- new js 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/matfferialize.min.js"></script>
+    <script src="jss/moment.min.js"></script>
+    <script src="jss/bootstrap-datetimepicker.js"></script>
 
-
+-->
 
 <script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -86,11 +94,12 @@
 </head>
 
 <body>
+<div id="wait" style="display:none;width:69px;height:89px;border:1px solid black;position:absolute;top:50%;left:50%;padding:2px;"><img src='demo_wait.gif' width="64" height="64" /><br>Loading..</div>
 <div class="container-fluid font content">
 <div class="row navbar ">
 	<div class="col-md-12 col-xs-12 col-sm-12 mainheader_align">
 		<div class="col-md-4 col-xs-12 col-sm-12">
-			<div class="institution tregular">REVA INSTITUTION OF TECHNOLOGY
+			<div class="institution">REVA INSTITUTION OF TECHNOLOGY
 			</div>
 
 		</div>
@@ -130,43 +139,15 @@
 		</div>
 		
 			<div class="col-md-2 col-xs-6 col-sm-12 side-info" >
-				<script>
-				function dateTime(){
-					var date = new Date();
-					var options = {
-					    weekday: "long", year: "numeric", month: "short",
-					    day: "numeric"
-					};
-					var date = new Date();
-					var opt={
-						 hour: "2-digit", minute: "2-digit"
-					};
-					var hr_time=date.toLocaleTimeString("en-us", opt);
-					var date_time=date.toLocaleDateString("en-us", options);
-
-					$("#demo-hr").text(hr_time);
-					$("#demo-day").text(date_time);
-					}
-				$(document).ready(function(){
-					dateTime();
-    				myVar = setInterval("dateTime()", 50000);
-					});
-				</script>
+				<div class="pull-right">9:45 am</div>
+				<div class="pull-right" >Thursday, Jan 3rd 2016</div>
 				
-				<div class="pull-right" id="demo-hr">
-				</div>
-				<div class="pull-right" id="demo-day">
-				</div>
 			</div>
 			<div class="col-md-2 col-xs-6 col-sm-12 side-info verticalLine" >
 				<div class="pull-right">Signed in as Username</div>
-				<div class="pull-right" >Institution Name</div>
+				<div class="pull-right" ><a href="../login/login_page.php">LOGOUT</a></div>
 			</div>
 			
 		
 	</div> <!-- col 12-->
 </div> <!-- nav bar row -->
-
-
- 
-
