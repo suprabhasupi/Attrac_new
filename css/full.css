@@ -30,7 +30,9 @@ i.fa-bars {
     color: white;
 }
 
-
+.container-fluid.font.content{
+	padding: 0;
+}
 
 .navbar-default .navbar-toggle {
     border-color: #F1F3F6;
@@ -53,8 +55,8 @@ ul.nav.navbar-nav.mainmenu {
 
 
 .navbar{
-	height:100%;
-	background-color:#0071bc;
+	/*height:100%;*/
+	background-color:transparent;
 }
 
 .institution{
@@ -78,8 +80,24 @@ font-size:22px;
     border-left: 1px solid white;
 }
 
+ul.nav.navbar-nav.mainmenu{
+	height:0;
+}
+
+button#menu-toggle-2{
+	height: 2.5em;
+}
 
 
+nav.navbar.navbar-default.no-margin{
+    position: relative;
+    right: 32em;
+    width: 1%;
+}
+
+li.mns_btn{
+	height: 0;
+}
 /* -------------------------------------Content page -------------------------------*/
 
 .user-master{
@@ -427,6 +445,6 @@ width:102%;
 color:#666666;
 padding-top:0.7%;
 position: fixed;
-bottom: 0px;
+bottom: -1.5em;
 z-index: 1000;
 }

@@ -1,6 +1,5 @@
-
-body{
-	overflow-x: hidden;
+body {
+    overflow-x: hidden;
 }
 
 
@@ -21,6 +20,8 @@ span.atndnc,
 span.fdbck {
     font-size: 36px;
     color: white;
+    position: relative;
+    top: -21px;
 }
 
 .frst_pg {
@@ -31,10 +32,10 @@ span.fdbck {
 }
 
 .frst_para {
-    font-size: 22px;
+    font-size: 20px;
     position: relative;
-    left: 5.8em;
-    top: -2.3em;
+    left: 6.4em;
+    top: -3.5em;
 }
 
 
@@ -42,7 +43,8 @@ span.fdbck {
 
 .secnd_row,
 .fourth_row,
-.sixth_row, .eighth_row {
+.sixth_row,
+.eighth_row {
     margin-top: 118px;
     position: relative;
     left: 9em;
@@ -127,7 +129,7 @@ p.fourth_para {
 p.fifth_para {
     position: relative;
     top: -2.3em;
-    left: 7em;
+    left: 7.2em;
     color: white;
 }
 
@@ -137,19 +139,20 @@ p.fifth_para {
 p.sixth_para {
     position: relative;
     top: -2.6em;
-    left: 6.5em;
+    left: 5.7em;
     font-size: 16px;
 }
 
-
-.sixth_mac{
-	position: relative;
+.sixth_mac {
+    position: relative;
     left: 8em;
 }
 
+
 /*---------------------Seventh_row-----------------------------------------*/
-.seventh_row{
-	 background-image: url(images/features/bg4.png);
+
+.seventh_row {
+    background-image: url(images/features/bg4.png);
     height: 445px;
     background-size: 1350px 438px;
     background-repeat: no-repeat;
@@ -158,6 +161,49 @@ p.sixth_para {
 
 /*----------------------------------eighth row----------------------------*/
 
-.eighth_row{
+.eighth_row {}
 
+
+/*------------------------------footer----------------------------------*/
+
+.last_ftr {
+    background: #22aae2;
+}
+
+.ftr_bx {
+    margin-top: 110px;
+    margin-left: 200px;
+}
+
+.fotr_bx2 {
+    margin-top: 1em;
+}
+
+p.ftr_cont {
+    color: white;
+    font-size: 24px;
+    position: relative;
+    left: -1.4em;
+}
+
+img.fotr_icn7 {
+    margin-top: 9px;
+}
+
+
+.fotr_bx2 {
+    margin-top: 6px;
+}
+
+p.fotr_cont2.ftr_cont {
+    position: relative;
+    top: 15px;
+}
+
+p.fotr_cont3.ftr_cont {
+    position: relative;
+    top: 5px;
+}
+img.fotr_icn6 {
+    margin-top: -10px;
 }

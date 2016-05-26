@@ -108,31 +108,23 @@
 
 
 			<nav class="navbar navbar-default no-margin">
-    <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header fixed-brand">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  id="menu-toggle">
                       <span class="glyphicon glyphicon-th-large pull-left" aria-hidden="true"></span>
                     </button>
-                </div><!-- navbar-header-->
+                </div>
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav mainmenu">
-                                <li class="active"><button class="navbar-toggle collapse in mainmenu iconfmenu" data-toggle="collapse" id="menu-toggle-2"> <i class="fa fa-bars mainmenu" aria-hidden="true"></i></button></li>
+                                <li class="active mns_btn"><button class="navbar-toggle collapse in mainmenu iconfmenu" data-toggle="collapse" id="menu-toggle-2"> <i class="fa fa-bars mainmenu" aria-hidden="true"></i></button></li>
                             </ul>
-                </div><!-- bs-example-navbar-collapse-1 -->
+                </div>
     </nav>
 
 
-
-
-
-
-
-
-
-
-
 		</div>
+
+
 		<div class="col-md-1 col-xs-12 col-sm-12 icon">
 			<div><i class="fa fa-envelope" ></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-bell"></i></div>
 			
