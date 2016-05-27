@@ -16,39 +16,94 @@
     <!-- <script type="text/javascript" src="js/jquery2.js"></script> -->
     <script type="text/javascript" src="js/TweenMax.min.js"></script>
     <script type="text/javascript" src="js/highlight.pack.js"></script>
-    <script type="text/javascript" src="js/modernizr.custom.min.js" ></script>
+    <script type="text/javascript" src="js/modernizr.custom.min.js"></script>
     <script type="text/javascript" src="js/ScrollMagic.js"></script>
     <script type="text/javascript" src="js/animation.gsap.js"></script>
     <script type="text/javascript" src="js/debug.addIndicators.js"></script>
-
     <link rel="stylesheet" type="text/css" href="feature.css">
 </head>
 
 <body>
     <div class="container col-md-12 col-sm-12 col-xs-12">
         <div class="row">
+            <style type="text/css">
+            .parallaxParent {
+                height: 80vh;
+                overflow: hidden;
+                border: 0;
+            }
             
-            <div class=" col-md-12 col-sm-12 col-xs-12 feature_page panel" id="parallax1">
+            .parallaxParent > * {
+                height: 200%;
+                position: relative;
+                top: -100%;
+            }
+            
+            .parallaxParent_second_row {
+                height: 60vh;
+                overflow: hidden;
+                border: 0;
+            }
+            
+            .parallaxParent_second_row > * {
+                height: 200%;
+                position: relative;
+                top: -100%;
+            }
+            
+            .parallaxParent_third_row {
+                height: 52vh;
+                overflow: hidden;
+                border: 0;
+            }
+            
+            .parallaxParent_third_row > * {
+                height: 200%;
+                position: relative;
+                top: -100%;
+            }
+            
+            .prlx3 div {
+                padding: 0;
+            }
+            
+            .prlx4 div {
+                padding: 0;
+            }
+            
+            .parallaxParent_fourth_row {
+                height: 52vh;
+                overflow: hidden;
+                border: 0;
+            }
+            
+            .parallaxParent_fourth_row > * {
+                height: 200%;
+                position: relative;
+                top: -175%;
+            }
+            </style>
+            <div class=" col-md-12 col-sm-12 col-xs-12 feature_page panel parallaxParent" id="parallax1">
                 <div class="prlx1">
+                    <div class="col-md-12 col-sm-12 col-xs-12"><img src="images/features/bg1_1.jpg"></div>
+                    <!--       <div class="col-md-12 col-sm-12 col-xs-12">&nbsp;</div>
                 <div class="col-md-12 col-sm-12 col-xs-12">&nbsp;</div>
                 <div class="col-md-12 col-sm-12 col-xs-12">&nbsp;</div>
                 <div class="col-md-12 col-sm-12 col-xs-12">&nbsp;</div>
-                <div class="col-md-12 col-sm-12 col-xs-12">&nbsp;</div>
-                <div class="col-md-12 col-sm-12 col-xs-12">&nbsp;</div>
-                <div class="col-md-12  col-sm-12 col-xs-12 hedr">&nbsp;</div>
-                <div class="col-md-6 col-sm-6 col-xs-12"></div>
-                <div class="col-md-6 col-sm-6 col-xs-6 frst_pg">
-                    <img src="images/features/notepad.png">
-                    <span class="atndnc tregular">Attendance</span>
-                    <p class="frst_para tregular">Update with ease
-                        <br> store records and access them anytime
-                        <br> Prevent tampering of loss of data </p>
-                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">&nbsp;</div> -->
+                    <!-- <div class="col-md-12  col-sm-12 col-xs-12 hedr">&nbsp;</div>
+                <div class="col-md-6 col-sm-6 col-xs-12"></div> -->
+                    <div class="col-md-6 col-sm-6 col-xs-6 frst_pg">
+                        <img src="images/features/notepad.png">
+                        <span class="atndnc tregular">Attendance</span>
+                        <p class="frst_para tregular">Update with ease
+                            <br> store records and access them anytime
+                            <br> Prevent tampering of loss of data </p>
+                    </div>
                 </div>
             </div>
-
-            <!-- --------------------second row--------------------- -->
-            <div class="col-md-12 col-sm-12 col-xs-12 panel">
+            <!-- --------------------First-child row--------------------- -->
+            <div class="col-md-12 col-sm-12 col-xs-12 panel ">
                 <div class="col-md-5 col-sm-12 col-xs-12 secnd_row">
                     <img src="images/features/notepad2.png">
                     <span class="marks_memo tregular">Marks Memo </span>
@@ -62,19 +117,42 @@
                     <img src="images/features/mac1.png">
                 </div>
             </div>
-            <!-- ---------------------third row---------------------------------- -->
-            <div class="col-md-12 col-sm-12 col-xs-12 third_row panel" id="parallax2">
-                <div class="col-md-6 col-sm-6 col-xs-6">
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-6 thrd_row_right">
-                    <img src="images/features/wtsp.png">
-                    <span class="fdbck tregular">Feedback</span>
-                    <p class="third_para tregular">Students can voice their opinions
-                        <br>Teachers get constructive criticism
-                        <br>Administration can track performance</p>
+            <script>
+            // init controller
+            var controller = new ScrollMagic.Controller({
+                globalSceneOptions: {
+                    triggerHook: "onEnter",
+                    duration: "200%"
+                }
+            });
+
+            // build scenes
+            new ScrollMagic.Scene({
+                    triggerElement: "#parallax1"
+                })
+                .setTween("#parallax1 > div", {
+                    y: "100%",
+                    ease: Linear.easeNone
+                })
+                .addIndicators()
+                .addTo(controller);
+            </script>
+            <!-- ---------------------second row---------------------------------- -->
+            <div class="col-md-12 col-sm-12 col-xs-12 third_row panel parallaxParent_second_row" id="parallax2">
+                <div class="prlx2">
+                    <div class="col-md-12 col-sm-12 col-xs-12"><img src="images/features/bg2_1.png"></div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6 thrd_row_right">
+                        <img src="images/features/wtsp.png">
+                        <span class="fdbck tregular">Feedback</span>
+                        <p class="third_para tregular">Students can voice their opinions
+                            <br>Teachers get constructive criticism
+                            <br>Administration can track performance</p>
+                    </div>
                 </div>
             </div>
-            <!-- -------------------Fourth row--------------------- -->
+            <!-- -------------------second-child row--------------------- -->
             <div class="col-md-12 col-sm-12 col-xs-12 panel">
                 <div class="col-md-5 col-sm-12 col-xs-12 fourth_row">
                     <img src="images/features/bed.png">
@@ -87,22 +165,45 @@
                     <img src="images/features/mac2.png">
                 </div>
             </div>
-            <!-- -----------------------------Fifth row----------------------------- -->
-            <div class="col-md-12 col-sm-12 col-xs-12 fifth_row" id="parallax3">
-                <div class="col-md-6 col-sm-6 col-xs-6">
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-6 fifth_row_right">
-                    <img src="images/features/mny.png">
-                    <span class="fdbck tregular">Fee management</span>
-                    <p class="fifth_para tregular">Teachers can communicate with parents and
-                        <br> vice versa
-                        <br> Lets students interact with each other
-                        <br> Promotes open communication</p>
+            <script>
+            // init controller
+            var controller = new ScrollMagic.Controller({
+                globalSceneOptions: {
+                    triggerHook: "onEnter",
+                    duration: "200%"
+                }
+            });
+
+            // build scenes
+            new ScrollMagic.Scene({
+                    triggerElement: "#parallax2"
+                })
+                .setTween("#parallax2 > div", {
+                    y: "100%",
+                    ease: Linear.easeNone
+                })
+                .addIndicators()
+                .addTo(controller);
+            </script>
+            <!-- -----------------------------Third row----------------------------- -->
+            <div class="col-md-12 col-sm-12 col-xs-12 fifth_row parallaxParent_third_row" id="parallax3">
+                <div class="prlx3">
+                    <div class="col-md-12 col-sm-12 col-xs-12"><img src="images/features/bg3.jpg"></div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6 fifth_row_right">
+                        <img src="images/features/mny.png">
+                        <span class="fdbck tregular">Fee management</span>
+                        <p class="fifth_para tregular">Teachers can communicate with parents and
+                            <br> vice versa
+                            <br> Lets students interact with each other
+                            <br> Promotes open communication</p>
+                    </div>
                 </div>
             </div>
-            <!-- -----------------------------Sixth row------------------------ -->
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="col-md-5 col-sm-12 col-xs-12 sixth_row">
+            <!-- -----------------------------Third-row child------------------------ -->
+            <div class="col-md-12 col-sm-12 col-xs-12" style="padding:2.5em 0px;">
+                <div class="col-md-5 col-sm-12 col-xs-12 sixth_row" style="margin-top:88px;">
                     <img src="images/features/wtsp2.png">
                     <span class="webinar tregular">Webinar</span>
                     <p class="sixth_para tregular"> Regular updates about student performance
@@ -113,19 +214,42 @@
                     <img src="images/features/mac3.png">
                 </div>
             </div>
-            <!-- -------------------------------------Seventh Row-------------------------------------- -->
-            <div class="col-md-12 col-sm-12 col-xs-12 seventh_row">
-                <div class="col-md-6 col-sm-6 col-xs-6"></div>
-                <div class="col-md-6 col-sm-6 col-xs-6 fifth_row_right">
-                    <img src="images/features/print.png">
-                    <span class="fdbck tregular">Suggestion box</span>
-                    <p class="fifth_para tregular">Promotes healthy conversation
-                        <br> Students have a space to express issues
-                        <br> Teachers and administration can act on drawbacks</p>
+            <script>
+            // init controller
+            var controller = new ScrollMagic.Controller({
+                globalSceneOptions: {
+                    triggerHook: "onEnter",
+                    duration: "200%"
+                }
+            });
+
+            // build scenes
+            new ScrollMagic.Scene({
+                    triggerElement: "#parallax3"
+                })
+                .setTween("#parallax3 > div", {
+                    y: "100%",
+                    ease: Linear.easeNone
+                })
+                .addIndicators()
+                .addTo(controller);
+            </script>
+            <!-- -------------------------------------Fourth Row-------------------------------------- -->
+          <!--   <div class="col-md-12 col-sm-12 col-xs-12 seventh_row parallaxParent_fourth_row" id="parallax4">
+                <div class="prlx4">
+                    <div class="col-md-12 col-sm-12 col-xs-12"><img src="images/features/bg4.png"></div>
+                    <div class="col-md-6 col-sm-6 col-xs-6"></div>
+                    <div class="col-md-6 col-sm-6 col-xs-6 fifth_row_right">
+                        <img src="images/features/print.png">
+                        <span class="fdbck tregular">Suggestion box</span>
+                        <p class="fifth_para tregular">Promotes healthy conversation
+                            <br> Students have a space to express issues
+                            <br> Teachers and administration can act on drawbacks</p>
+                    </div>
                 </div>
-            </div>
-            <!-- --------------------------------------Eighth row--------------------------------- -->
-            <div class="col-md-12 col-sm-12 col-xs-12">
+            </div> -->
+            <!-- --------------------------------------Fourth-child row--------------------------------- -->
+          <!--   <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="col-md-5 col-sm-12 col-xs-12 eighth_row">
                     <img src="images/features/tutorial.png">
                     <span class="webinar tregular">Web tutorial</span>
@@ -137,62 +261,72 @@
                     <img src="images/features/mac4.png">
                 </div>
             </div>
+            <script>
+            // init controller
+            var controller = new ScrollMagic.Controller({
+                globalSceneOptions: {
+                    triggerHook: "onEnter",
+                    duration: "350%"
+                }
+            });
+
+            // build scenes
+            new ScrollMagic.Scene({
+                    triggerElement: "#parallax3"
+                })
+                .setTween("#parallax4 > div", {
+                    y: "175%",
+                    ease: Linear.easeNone
+                })
+                .addIndicators()
+                .addTo(controller);
+            </script> -->
             <!-- ---------------------------------Footer------------------------------- -->
             <div class="col-md-12 col-sm-12 col-xs-12 last_ftr">
-
-            <div class="row ftr_bx tregular">
-            <div class="col-md-3 col-sm-3 col-xs-12 fotr_bx1">
-            <img src="images/features/ftr1_icon.png" class="fotr_icn1">
-            <p class="fotr_cont1 ftr_cont">Individual logins </p>
+                <div class="row ftr_bx tregular">
+                    <div class="col-md-3 col-sm-3 col-xs-12 fotr_bx1">
+                        <img src="images/features/ftr1_icon.png" class="fotr_icn1">
+                        <p class="fotr_cont1 ftr_cont">Individual logins </p>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-12 fotr_bx2">
+                        <img src="images/features/ftr2_icon.png" class="fotr_icn2">
+                        <p class="fotr_cont2 ftr_cont">Time tables </p>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="images/features/ftr3_icon.png" class="fotr_icn3">
+                        <p class="fotr_cont3 ftr_cont">Raeading Material </p>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="images/features/ftr4_icon.png" class="fotr_icn4">
+                        <p class="fotr_cont4 ftr_cont">Online exams
+                            <br> and seminars </p>
+                    </div>
+                </div>
+                <div class="row ftr_bx tregular">
+                    <div class="col-md-3 col-sm-3 col-xs-12 fotr_bx1">
+                        <img src="images/features/ftr5_icon.png" class="fotr_icn5">
+                        <p class="fotr_cont5 ftr_cont">Placement
+                            <br>assistance </p>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-12 fotr_bx2">
+                        <img src="images/features/ftr6_icon.png" class="fotr_icn6">
+                        <p class="fotr_cont6 ftr_cont">Sms/E-mail alerts </p>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="images/features/ftr7_icon.png" class="fotr_icn7">
+                        <p class="fotr_cont7 ftr_cont">Alumni services </p>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                    </div>
+                </div>
             </div>
-
-            <div class="col-md-3 col-sm-3 col-xs-12 fotr_bx2">
-            <img src="images/features/ftr2_icon.png"  class="fotr_icn2">
-            <p class="fotr_cont2 ftr_cont">Time tables </p>
-            </div>
-
-            <div class="col-md-3 col-sm-3 col-xs-12"> 
-            <img src="images/features/ftr3_icon.png" class="fotr_icn3">
-            <p class="fotr_cont3 ftr_cont">Raeading Material </p>
-            </div>
-
-            <div class="col-md-3 col-sm-3 col-xs-12">
-                <img src="images/features/ftr4_icon.png" class="fotr_icn4">
-            <p class="fotr_cont4 ftr_cont">Online exams <br> and seminars </p>
-            </div>
-</div>
-
-   <div class="row ftr_bx tregular">
-            <div class="col-md-3 col-sm-3 col-xs-12 fotr_bx1">
-            <img src="images/features/ftr5_icon.png" class="fotr_icn5">
-            <p class="fotr_cont5 ftr_cont">Placement <br>assistance </p>
-            </div>
-
-            <div class="col-md-3 col-sm-3 col-xs-12 fotr_bx2">
-            <img src="images/features/ftr6_icon.png"  class="fotr_icn6">
-            <p class="fotr_cont6 ftr_cont">Sms/E-mail alerts </p>
-            </div>
-
-            <div class="col-md-3 col-sm-3 col-xs-12"> 
-            <img src="images/features/ftr7_icon.png" class="fotr_icn7">
-            <p class="fotr_cont7 ftr_cont">Alumni services </p>
-            </div>
-
-            <div class="col-md-3 col-sm-3 col-xs-12">
-               
-            </div>
-</div>
-
-
-
-            </div>
-
-            <script>
+            <!--             <script>
                         $(function () { // wait for document ready
                             // init
                             var controller = new ScrollMagic.Controller({
                                 globalSceneOptions: {
-                                    triggerHook: 'onLeave'
+                                    triggerHook: 'onEnter',
+                                    duration: "200%"
                                 }
                             });
 
@@ -204,22 +338,22 @@
                                 new ScrollMagic.Scene({
                                         triggerElement: slides[i]
                                     })
-                                    // .setPin(slides[i])
+                                    // .setPin(slides[i]) 
+                                    .setTween(".prlx1", {y: "30%", ease: Linear.easeNone})
                                     .addIndicators() // add indicators (requires plugin)
                                     .addTo(controller);
                             }
                         });
                     </script>
-
-
-<!-- 
+ -->
+            <!-- 
  <script>
                         // init controller
                         var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
 
                         // build scenes
                         new ScrollMagic.Scene({triggerElement: "#parallax1"})
-                                        .setTween(".prlx1", {y: "30%", ease: Linear.easeNone})
+                                        .setTween("#parallax1 > div", {y: "30%", ease: Linear.easeNone})
                                         .addIndicators()
                                         .addTo(controller);
 
@@ -233,7 +367,6 @@
                                         .addIndicators()
                                         .addTo(controller);
                     </script> -->
-
         </div>
     </div>
 </body>
