@@ -7,13 +7,11 @@
 <meta name="description" content="">
     <meta name="author" content="">
     
-<!-- new css  
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css"> 
-    <link rel="stylesheet" type="text/css" href="css/materialize.css">
+ 
+  
     <link rel="stylesheet" type="text/css" href="css/font_new_16.css">    
    <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.css"> 
-  <link rel="stylesheet" type="text/css" href="css/style_guide_faculty.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/style_guide_faculty.css"> -->
 
 
     

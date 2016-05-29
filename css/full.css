@@ -25,6 +25,7 @@ body {
 	position: fixed;
     background: #0071BC;
     z-index: 2000;
+    margin-left: 1em;
 }
 i.fa-bars {
     color: white;
@@ -36,7 +37,7 @@ i.fa-bars {
 
 .navbar-default .navbar-toggle {
     border-color: #F1F3F6;
-    padding: 7px;
+    padding: 8.5px;
 }
 
 /*.navbar-default .navbar-toggle:hover{
@@ -84,10 +85,10 @@ ul.nav.navbar-nav.mainmenu{
 	height:0;
 }
 
-button#menu-toggle-2{
+/*button#menu-toggle-2{
 	height: 2.5em;
 }
-
+*/
 
 nav.navbar.navbar-default.no-margin{
     position: relative;
@@ -445,6 +446,6 @@ width:102%;
 color:#666666;
 padding-top:0.7%;
 position: fixed;
-bottom: -1.5em;
+bottom: 0px;
 z-index: 1000;
 }

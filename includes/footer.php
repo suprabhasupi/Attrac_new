@@ -13,7 +13,7 @@
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
         <script src="js/ripple-config.js"></script>
-        <script type="text/javascript" src="js/materialize.min.js"></script>
+       
 </body>
 
 

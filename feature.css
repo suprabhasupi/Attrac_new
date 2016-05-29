@@ -4,6 +4,10 @@ body {
 
 
 /*-------------------------first page------------------------*/
+.logo{
+    position: absolute;
+    margin-top: 1em;
+}
 .panel{
     padding: 0;
 }
@@ -43,7 +47,63 @@ span.fdbck {
     top: -3.5em;
 }
 
+.nav-color{
+background-color:#22aae2;
+border-radius: 0px 0px 200px 0px;
 
+}
+.nav-width{
+width:48%;
+overflow:hidden;
+}
+.nav-border{
+border-top:2px solid #22aae2;
+margin-top: 6em;
+}
+
+.navbar-inverse .navbar-nav>.active>a{
+    background-color: #e73a59 !important;
+}
+
+img.logo_design{
+    margin-left: 5%;
+    margin-bottom: 11px;
+    margin-top: 11px;
+}
+.rit_hdr{
+    position: relative;
+    top: 1.3em;
+    left: 2.2em;
+}
+img.twitter_icon{
+    position: relative;
+    top: 5px;
+}
+
+img.google_icon{
+        position: relative;
+    left: -8px;
+    top: 3px;
+}
+
+img.utube_icon{
+    position: relative;
+    top: 5px;
+}
+
+
+img.skype_icon{
+position: relative;
+    top: 2.3em;
+    float: left;
+    left: 2.5em;
+}
+
+.navigation{
+    position: absolute;
+    width:100%;
+        margin-top: 1em;
+}
 /*---------------------------second row--------------------------------------*/
 
 .secnd_row,
